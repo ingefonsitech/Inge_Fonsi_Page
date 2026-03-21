@@ -1,0 +1,93 @@
+/* custom.css — Inge Fonsi Landing */
+
+:root {
+    --bg-base: #0c0d12;
+    --bg-panel: #13151f;
+    --border: #1f2231;
+    --text-primary: #ffffff;
+    --text-muted: #8892a4;
+    --accent-cyan: #00bcd4;
+    --accent-orange: #ff5722;
+    --accent-glow: rgba(0, 188, 212, 0.15);
+}
+
+/* Base resets and technical style */
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-base);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Final Fantasy XV inspired panels */
+.panel-ff {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+.panel-ff:hover {
+    box-shadow: 0 0 16px var(--accent-glow);
+}
+
+/* Typography treatments */
+.title-huge {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.section-label {
+    font-family: 'Fira Code', monospace;
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+}
+
+/* WhatsApp Pulse Animation */
+@keyframes pulse-cyan {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.animate-pulse-cyan {
+    animation: pulse-cyan 2s infinite ease-in-out;
+}
+
+/* Custom scrollbar for technical look */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-cyan);
+}
+
+/* Custom Scroll Line Animation */
+@keyframes scroll-down {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(200%); }
+}
+
+.scroll-line {
+    animation: scroll-down 2s ease-in-out infinite;
+}
+
+.scroll-line-slow {
+    animation: scroll-down 4s ease-in-out infinite;
+}
