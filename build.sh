@@ -20,3 +20,9 @@ echo "✅ Variables inyectadas:"
 echo "   WHATSAPP_NUMBER = ${WA}"
 echo "   CONTACT_EMAIL   = ${EMAIL}"
 echo "   WEB3FORMS_KEY   = ${W3F:0:8}... (oculto por seguridad)"
+
+# Inyectar URLs de Redes Sociales
+sed -i "s|__GITHUB_URL__|${GITHUB_URL}|g" index.html
+sed -i "s|__LINKEDIN_URL__|${LINKEDIN_URL}|g" index.html
+sed -i "s|__TIKTOK_URL__|${TIKTOK_URL}|g" index.html
+sed -i "s|__TWITTER_URL__|${TWITTER_URL}|g" index.html
