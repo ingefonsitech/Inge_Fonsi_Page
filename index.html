@@ -594,10 +594,38 @@
 
             <div class="panel-ff p-8 relative">
                 <form x-data="{ sending: false, sent: false }"
-                    @submit.prevent="sending = true; setTimeout(() => { sent = true; sending = false }, 1500)">
+                    @submit.prevent="
+                      sending = true;
+                      const formData = new FormData($el);
+                      const data = Object.fromEntries(formData);
+                      fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                      })
+                      .then(r => r.json())
+                      .then(r => {
+                        sending = false;
+                        if (r.success) {
+                          sent = true;
+                          $el.reset();
+                        } else {
+                          alert('Error al enviar. Intenta por WhatsApp.');
+                        }
+                      })
+                      .catch(() => {
+                        sending = false;
+                        alert('Error de conexión. Intenta por WhatsApp.');
+                      })
+                    ">
+                    <!-- Web3Forms: campos ocultos requeridos -->
+                    <input type="hidden" name="access_key" value="__WEB3FORMS_KEY__">
+                    <input type="hidden" name="subject" value="Nuevo contacto desde Inge Fonsi">
+                    <input type="hidden" name="from_name" value="Inge Fonsi Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                     <div class="space-y-8">
                         <div class="relative pt-4">
-                            <input type="text" id="name" required
+                            <input type="text" id="name" name="name" required
                                 class="w-full bg-transparent border-b border-border-dim py-2 text-white font-mono text-sm focus:outline-none focus:border-accent-cyan transition-colors peer placeholder-transparent"
                                 placeholder="x">
                             <label for="name"
@@ -607,7 +635,7 @@
                         </div>
 
                         <div class="relative pt-4">
-                            <input type="email" id="email" required
+                            <input type="email" id="email" name="email" required
                                 class="w-full bg-transparent border-b border-border-dim py-2 text-white font-mono text-sm focus:outline-none focus:border-accent-cyan transition-colors peer placeholder-transparent"
                                 placeholder="x">
                             <label for="email"
@@ -616,7 +644,7 @@
                             </label>
                         </div>
                         <div class="relative pt-4">
-                            <select id="service" required
+                            <select id="service" name="service" required
                                 class="w-full bg-transparent border-b border-border-dim py-2 text-white font-mono text-sm focus:outline-none focus:border-accent-cyan transition-colors peer appearance-none cursor-pointer">
                                 <option value="" disabled selected class="bg-bg-panel hidden">Selecciona un módulo
                                     (Servicio)</option>

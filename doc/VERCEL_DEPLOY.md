@@ -38,6 +38,7 @@ git push origin main
    |---|---|
    | `WHATSAPP_NUMBER` | `573001234567` (sin `+`, sin espacios) |
    | `CONTACT_EMAIL` | `oscar@ingefonsi.com` |
+   | `WEB3FORMS_KEY` | Tu clave de [web3forms.com](https://web3forms.com) |
 4. Haz clic en el botón **"Deploy"**.
 
 Tardará aproximadamente 5 a 10 segundos en subir los archivos, aplicar SSL, y proporcionar un dominio `.vercel.app`.

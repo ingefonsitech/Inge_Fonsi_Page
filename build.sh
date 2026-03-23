@@ -9,11 +9,14 @@ echo "🔧 Inyectando variables de entorno en index.html..."
 # Usar valores por defecto en caso de que las variables no estén definidas
 WA="${WHATSAPP_NUMBER:-573000000000}"
 EMAIL="${CONTACT_EMAIL:-oscar@ingefonsi.com}"
+W3F="${WEB3FORMS_KEY:-REEMPLAZA_CON_TU_KEY}"
 
 # Reemplazar marcadores en index.html usando sed
 sed -i "s|__WHATSAPP_NUMBER__|${WA}|g" index.html
 sed -i "s|__CONTACT_EMAIL__|${EMAIL}|g" index.html
+sed -i "s|__WEB3FORMS_KEY__|${W3F}|g" index.html
 
 echo "✅ Variables inyectadas:"
 echo "   WHATSAPP_NUMBER = ${WA}"
 echo "   CONTACT_EMAIL   = ${EMAIL}"
+echo "   WEB3FORMS_KEY   = ${W3F:0:8}... (oculto por seguridad)"
