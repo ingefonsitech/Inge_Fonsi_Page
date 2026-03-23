@@ -661,6 +661,15 @@
                             <i data-lucide="chevron-down"
                                 class="w-4 h-4 text-text-muted absolute right-2 top-4 pointer-events-none"></i>
                         </div>
+                        <div class="relative pt-4">
+                            <textarea id="message" name="message" rows="3" required
+                                class="w-full bg-transparent border-b border-border-dim py-2 text-white font-mono text-sm focus:outline-none focus:border-accent-cyan transition-colors peer placeholder-transparent resize-none"
+                                placeholder="x"></textarea>
+                            <label for="message"
+                                class="absolute left-0 -top-1 text-xs font-fira tracking-widest text-accent-cyan peer-placeholder-shown:text-text-muted peer-placeholder-shown:top-2 peer-focus:-top-1 peer-focus:text-accent-cyan transition-all uppercase pointer-events-none">
+                                Cuéntame tu problema
+                            </label>
+                        </div>
                         <div class="pt-4">
                             <button x-show="!sent" type="submit"
                                 class="w-full bg-accent-cyan text-black font-montserrat font-bold uppercase py-3 rounded-[2px] hover:bg-accent-orange transition-colors flex items-center justify-center gap-2"
