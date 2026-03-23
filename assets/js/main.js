@@ -8,14 +8,15 @@
  */
 
 // Registrar ScrollTrigger
+
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', () => {
     // System initialized (Producción)
-    
+
     // Animación de entrada inicial del Hero (KERN style)
     const heroTl = gsap.timeline();
-    
+
     // Ocultar elementos para inicializar
     gsap.set(['#hero-label', '#hero-desc', '#hero-ctas', '#scroll-indicator'], { opacity: 0, y: 20 });
     gsap.set('.hero-word', { y: '100%', opacity: 0 });
@@ -27,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
         stagger: 0.15,
         ease: 'expo.out'
     })
-    .to(['#hero-label', '#hero-desc', '#hero-ctas', '#scroll-indicator'], {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: 'power3.out'
-    }, "-=0.6");
+        .to(['#hero-label', '#hero-desc', '#hero-ctas', '#scroll-indicator'], {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: 'power3.out'
+        }, "-=0.6");
 
     // Efecto texto KERN en Scroll
     // Aplicamos el scroll al contendor padre para no generar conflictos con la animación de entrada
@@ -77,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === FASE 4: Fade-up en elementos de texto e imágenes (secciones) ===
     const fadeElements = gsap.utils.toArray('section:not(#hero) .section-label, section:not(#hero) h2, section:not(#hero) .font-mono > p, section:not(#hero) .panel-ff, section:not(#hero) .relative > h3, section:not(#hero) form');
-    
+
     fadeElements.forEach(el => {
-        gsap.fromTo(el, 
+        gsap.fromTo(el,
             { opacity: 0, y: 40 },
             {
                 opacity: 1,

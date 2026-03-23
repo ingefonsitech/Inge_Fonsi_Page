@@ -593,8 +593,7 @@
             </div>
 
             <div class="panel-ff p-8 relative">
-                <form x-data="{ sending: false, sent: false }"
-                    @submit.prevent="
+                <form x-data="{ sending: false, sent: false }" @submit.prevent="
                       sending = true;
                       const formData = new FormData($el);
                       const data = Object.fromEntries(formData);
@@ -694,18 +693,31 @@
     <footer class="py-8 border-t border-border-dim bg-bg-panel flex flex-col items-center justify-center">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
             <div class="text-white font-oswald text-xl uppercase tracking-widest mb-4 md:mb-0">
-                INGE FONSI <span class="text-accent-cyan text-xs">v1.1</span>
+                INGE FONSI <span class="text-accent-cyan text-xs">v1.0</span>
             </div>
-            <div class="flex gap-6 mb-4 md:mb-0">
-                <a href="#" class="text-text-muted hover:text-accent-cyan transition-colors"><i data-lucide="github"
-                        class="w-5 h-5"></i></a>
-                <a href="#" class="text-text-muted hover:text-accent-cyan transition-colors"><i data-lucide="linkedin"
-                        class="w-5 h-5"></i></a>
-                <a href="#" class="text-text-muted hover:text-accent-cyan transition-colors"><i data-lucide="twitter"
-                        class="w-5 h-5"></i></a>
+            <div class="flex gap-6 mb-4 md:mb-0 items-center">
+                <a href="__GITHUB_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/material-outlined/24/ffffff/github.png" alt="GitHub"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+
+                <a href="__LINKEDIN_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+
+                <a href="__TIKTOK_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png" alt="TikTok"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+
+                <a href="__TWITTER_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png" alt="X"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
             </div>
             <div class="font-mono text-[10px] text-text-muted uppercase text-center md:text-right">
-                Sistema operativo en iteración.<br>
+                Hecho con ingenio. Mejorado con experiencia.<br>
                 © 2026 Oscar Ochoa.
             </div>
         </div>
