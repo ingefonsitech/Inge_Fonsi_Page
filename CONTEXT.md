@@ -19,17 +19,20 @@ Hosting: Vercel Hobby (gratuito). Repo: GitHub.
 - Una fase aprobada antes de empezar la siguiente
 
 ## 3. Estado actual del proyecto
-- Fase actual: FASE 4 — Motion & Scrollytelling (COMPLETADA)
-- Último ítem completado: Transiciones de fondo en scroll, animaciones de entrada, contadores dinámicos y telemetría de scroll (progress bar).
-- Próximo ítem a trabajar: FASE 5 — Revisión final y deploy
-- Archivos modificados en esta sesión: index.html, assets/css/custom.css, assets/js/main.js, TODO.md, CONTEXT.md
+- Fase actual: FASE 5 — Revisión final y deploy (COMPLETADA ✅)
+- Último ítem completado: Checklist de calidad pasado (sin console.logs, sin rutas absolutas, sin API keys hardcodeadas), pruebas responsivas en 375px/768px/1280px en sitio en vivo, variables de entorno inyectadas correctamente en Vercel.
+- Sitio en producción: https://ingefonsi.vercel.app
+- Repositorio: https://github.com/ingefonsitech/Inge_Fonsi_Page.git
+- Próximo ítem a trabajar: PROYECTO COMPLETO — mantenimiento y nuevos demos/portafolio
+- Archivos modificados en esta sesión: TODO.md, CONTEXT.md
 
 ## 4. Decisiones tomadas (para no volver a discutirlas)
 - Se sigue estrictamente el stack de CDNs para evitar costos y complejidad de build. — decidido Fase 0
 - Se utilizará GSAP como motor principal de animaciones de scroll. — decidido Fase 0
 
 ## 5. Problemas conocidos / deuda técnica
-- Ninguno hasta el momento.
+- Las tarjetas de portafolio tienen imágenes placeholder (icono lucide). Se recomienda reemplazar por capturas reales de los proyectos cuando estén disponibles.
+- Los links de portafolio (#) aún apuntan a "#" — pendiente conectar con GitHub/Vercel real de cada demo.
 
 ## 6. Cómo retomar en una sesión nueva
 1. Lee este CONTEXT.md completo
