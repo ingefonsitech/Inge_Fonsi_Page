@@ -40,7 +40,8 @@ Hosting: Vercel Hobby (gratuito). Repo: GitHub.
 - GSAP puede alertar "target not found" silenciosamente si queda lógica residual en `main.js` referente a elementos antiguos.
 
 ## 6. Cómo retomar en una sesión nueva
-1. Lee este CONTEXT.md completo
-2. Abre y revisa el `TODO.md` para visualizar el estado macro de la estructura de contenido nuevo.
-3. Di: "Retomamos desde [ítem pendiente]. El contexto está en CONTEXT.md y TODO.md del repositorio."
-4. No preguntes nada más. Continúa desde ahí.
+1. Lee este CONTEXT.md completo.
+2. Abre y revisa el `TODO.md` para visualizar el estado macro.
+3. **IMPORTANTE:** Para cualquier creación de página de blog, valida obligatoriamente la guía en [blog/seo_strategy.md](file:///c:/Users/oscek/Documents/IngeFonsi/blog/seo_strategy.md).
+4. Di: "Retomamos desde [ítem pendiente]. El contexto está en CONTEXT.md y TODO.md del repositorio."
+5. No preguntes nada más. Continúa desde ahí.
