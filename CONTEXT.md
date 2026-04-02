@@ -6,37 +6,41 @@
 ---
 
 ## 1. Quién soy y qué es este proyecto
-Oscar Alfonso Ochoa Caballero (Inge Fonsi). Landing page personal
-para ofrecer servicios de: landing pages, SEO tradicional, SEO para IA,
-y chatbots de negocio. Stack: HTML + Tailwind CDN + Alpine.js + GSAP.
+Oscar Alfonso Ochoa Caballero (Inge Fonsi). Sitio web profesional
+(evolucionado de Landing Page a Multi-Página) para ofrecer servicios de: 
+landing pages SEO/GEO-ready, auditorías técnicas y chatbots empresariales (RAG). 
+Stack: HTML + Tailwind CDN + Alpine.js + GSAP.
 Hosting: Vercel Hobby (gratuito). Repo: GitHub.
 
 ## 2. Reglas de oro que nunca se rompen
 - Sin npm, sin node_modules, todo por CDN
 - Sin GCP, AWS ni Azure (antecedente de $81 USD)
 - Sin rutas absolutas (causa del caos en proyecto anterior)
-- Sin API keys en el código
+- Sin API keys secretas quemadas en el código fuente (se inyectan con build.ps1)
 - Una fase aprobada antes de empezar la siguiente
 
 ## 3. Estado actual del proyecto
-- Fase actual: FASE 5 — Revisión final y deploy (COMPLETADA ✅)
-- Último ítem completado: Checklist de calidad pasado (sin console.logs, sin rutas absolutas, sin API keys hardcodeadas), pruebas responsivas en 375px/768px/1280px en sitio en vivo, variables de entorno inyectadas correctamente en Vercel.
+- Fase actual: MANTENIMIENTO MULTI-PÁGINA Y CONTENIDO ✅
+- Últimas implementaciones:
+  1. Se modularon las carpetas `/servicios/`, `/precios/`, y `/casos/` superando el monolito de index.html
+  2. Sustituidas las imágenes del portafolio/precios con activos visuales.
+  3. **Mejora UX Navegación**: Se eliminó el menú lateral de iconos ("HUD") y ahora todo el sitio cuenta con un menú nav superior clásico.
+  4. Script de PowerShell implementado: `build.ps1` inyecta variables de `.env`. `update_nav.ps1` sincroniza el Top Bar en todas las páginas.
+  5. **Estabilización de Encoding (UTF-8)**: Se subsanó por completo la corrupción de caracteres especiales y firmas BOM fantasma producidas por ediciones manuales o scripts obsoletos, asegurando que todos los .html preserven acentos del español en formato estándar.
 - Sitio en producción: https://ingefonsi.vercel.app
-- Repositorio: https://github.com/ingefonsitech/Inge_Fonsi_Page.git
-- Próximo ítem a trabajar: PROYECTO COMPLETO — mantenimiento y nuevos demos/portafolio
-- Archivos modificados en esta sesión: TODO.md, CONTEXT.md
+- Próximo ítem a trabajar: Publicación y maquetación de la zona de Blog (Drafts iniciales existen en `/blog/drafts/`)
 
 ## 4. Decisiones tomadas (para no volver a discutirlas)
-- Se sigue estrictamente el stack de CDNs para evitar costos y complejidad de build. — decidido Fase 0
-- Se utilizará GSAP como motor principal de animaciones de scroll. — decidido Fase 0
+- Se sigue estrictamente el stack de CDNs (Html/Tailwind/Alpine) para evitar costos y complejidad de build.
+- Navegación textual y superior: En sitios multipágina es mandatorio el uso de un Top Bar en lugar del estilo HUD puro.
+- **Manejo de archivos HTML en Windows**: Todos los scripts de PowerShell como `update_nav.ps1` y `build.ps1` obligatoriamente deben procesar los streams utilizando `[System.IO.File]::ReadAllText` y `[System.IO.File]::WriteAllText` junto a `$utf8NoBom = New-Object System.Text.UTF8Encoding $False` para prevenir duplicación de BOM (Byte Order Mark) y prevenir la destrucción de la tabla de caracteres, evitando funciones de PowerShell anticuadas como `Set-Content`.
 
 ## 5. Problemas conocidos / deuda técnica
-- Las tarjetas de portafolio tienen imágenes placeholder (icono lucide). Se recomienda reemplazar por capturas reales de los proyectos cuando estén disponibles.
-- Los links de portafolio (#) aún apuntan a "#" — pendiente conectar con GitHub/Vercel real de cada demo.
+- En `custom.css` podrían quedar estilos obsoletos pertenecientes a la anterior barra vertical `hud-navigation` que podrían limpiarse.
+- GSAP puede alertar "target not found" silenciosamente si queda lógica residual en `main.js` referente a elementos antiguos.
 
 ## 6. Cómo retomar en una sesión nueva
 1. Lee este CONTEXT.md completo
-2. Lee el TODO.md y ubica el primer ítem sin [x]
-3. Di: "Retomamos desde [ítem pendiente]. El contexto está en
-   CONTEXT.md y TODO.md del repositorio."
+2. Abre y revisa el `TODO.md` para visualizar el estado macro de la estructura de contenido nuevo.
+3. Di: "Retomamos desde [ítem pendiente]. El contexto está en CONTEXT.md y TODO.md del repositorio."
 4. No preguntes nada más. Continúa desde ahí.

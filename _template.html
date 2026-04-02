@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <!-- Google Analytics 4 (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV7L3WXM8X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MV7L3WXM8X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <link rel="canonical" href="https://ingefonsi.vercel.app/{{URL_PATH}}">
+    <!-- ATENCIÓN: Rutas relativas para assets según el nivel de profundidad -->
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    
+    <meta name="description" content="{{META_DESC}}">
+    <meta name="author" content="Oscar Alfonso Ochoa Caballero">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{TITLE}}">
+    <meta property="og:description" content="{{META_DESC}}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ingefonsi.vercel.app/{{URL_PATH}}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{TITLE}}">
+    <meta name="twitter:description" content="{{META_DESC}}">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "{{SERVICE_NAME}}",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Inge Fonsi"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-base': '#0c0d12',
+                        'bg-panel': '#13151f',
+                        'border-dim': '#1f2231',
+                        'accent-cyan': '#00bcd4',
+                        'accent-orange': '#ff5722',
+                    },
+                    fontFamily: {
+                        oswald: ['Oswald', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        mono: ['Roboto Mono', 'monospace'],
+                        fira: ['Fira Code', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
+
+    <!-- NAV BÁSICO PARA PÁGINAS INTERNAS -->
+    <nav class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="../../index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded-full border border-accent-cyan flex items-center justify-center group-hover:bg-accent-cyan/10 transition-colors">
+                    <span class="font-oswald text-accent-cyan text-sm">IF</span>
+                </div>
+                <span class="font-oswald text-lg tracking-wider hidden sm:block">INGE FONSI</span>
+            </a>
+            
+            <div class="flex items-center gap-6">
+                <!-- Breadcrumb simplificado -->
+                <div class="text-sm text-text-muted hidden md:flex items-center gap-2">
+                    <a href="../../index.html" class="hover:text-white transition-colors">Inicio</a>
+                    <span>/</span>
+                    <a href="../index.html" class="hover:text-white transition-colors">Servicios</a>
+                    <span>/</span>
+                    <span class="text-accent-cyan">{{BREADCRUMB_ACTIVE}}</span>
+                </div>
+                <a href="../../index.html" class="text-sm text-accent-cyan hover:text-white transition-colors flex items-center gap-1">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver a inicio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-4xl mx-auto px-6 py-20 min-h-screen">
+        <!-- Contenido dinámico aquí -->
+    </main>
+
+    <!-- FOOTER IDENTICO -->
+    <footer class="border-t border-border-dim bg-bg-panel py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="font-oswald text-xl text-white tracking-widest uppercase">Inge Fonsi</h4>
+                <p class="text-text-muted text-xs mt-1">Consultoría Estratégica en Tecnología</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="__GITHUB_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+                <a href="__LINKEDIN_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+                <a href="__TIKTOK_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png" alt="TikTok"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+                <a href="__TWITTER_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png" alt="X"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+            </div>
+            <div class="font-mono text-[10px] text-text-muted uppercase text-center md:text-right">
+                Hecho con ingenio. Mejorado con experiencia.<br>
+                © 2026 Oscar Ochoa.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="fixed bottom-6 right-6 z-[70]">
+        <a href=" https://wa.me/573001234567?text=Hola%20Oscar%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20{{BREADCRUMB_ACTIVE}}."
+            target="_blank"
+            class="flex items-center justify-center w-14 h-14 bg-accent-cyan rounded-full text-black hover:bg-accent-orange transition-colors duration-300 animate-pulse-cyan shadow-[0_0_15px_rgba(0,188,212,0.5)] group relative"
+            title="Escríbeme directo">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

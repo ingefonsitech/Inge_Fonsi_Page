@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(agenciapolvora.cl)",
+      "WebFetch(tooldata.io)"
+    ]
+  },
+  "$version": 3
+}

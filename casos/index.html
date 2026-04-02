@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV7L3WXM8X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MV7L3WXM8X');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de Éxito y Portafolio | Inge Fonsi</title>
+    <link rel="canonical" href="https://ingefonsi.vercel.app/casos/">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <meta name="description" content="Casos reales de indexación SEO, automatización con Chatbots RAG y desarrollo de plataformas B2B.">
+    <meta name="author" content="Oscar Alfonso Ochoa Caballero">
+
+    <meta property="og:title" content="Casos de Éxito y Portafolio | Inge Fonsi">
+    <meta property="og:description" content="Casos reales de indexación SEO, automatización con Chatbots RAG y desarrollo de plataformas B2B.">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Casos de Estudio Inge Fonsi",
+      "about": ["SEO", "Inteligencia Artificial", "Desarrollo Web"]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-base': '#0c0d12',
+                        'bg-panel': '#13151f',
+                        'border-dim': '#1f2231',
+                        'accent-cyan': '#00bcd4',
+                        'accent-orange': '#ff5722',
+                    },
+                    fontFamily: {
+                        oswald: ['Oswald', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        mono: ['Roboto Mono', 'monospace'],
+                        fira: ['Fira Code', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
+
+        <!-- ===================== TOP NAVIGATION ===================== -->
+    <nav x-data="{ open: false }" class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md fixed top-0 z-50 transition-all duration-300">
+        <div class="absolute bottom-0 left-0 w-full h-[2px] bg-transparent pointer-events-none">
+            <div id="scroll-progress-horizontal" class="h-full bg-accent-cyan shadow-[0_0_10px_rgba(0,188,212,0.8)] w-0"></div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded-[2px] border border-accent-cyan flex items-center justify-center group-hover:bg-accent-cyan/10 transition-colors">
+                    <span class="font-oswald text-accent-cyan text-sm font-bold">IF</span>
+                </div>
+                <span class="font-oswald text-lg tracking-wider font-bold text-white hidden sm:block">INGE FONSI</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
+                <a href="../index.html" class="text-text-muted hover:text-white transition-colors">Inicio</a>
+                <a href="../servicios/index.html" class="text-text-muted hover:text-white transition-colors">Servicios</a>
+                <a href="../precios/index.html" class="text-text-muted hover:text-white transition-colors">Precios</a>
+                <a href="../casos/index.html" class="text-text-muted hover:text-white transition-colors">Casos</a>
+                <a href="../index.html#contact" class="text-accent-cyan hover:text-white transition-colors border border-accent-cyan px-4 py-1.5 rounded-[2px] bg-accent-cyan/10 hover:bg-accent-cyan">Contacto</a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button @click="open = !open" class="md:hidden text-white flex items-center">
+                <i data-lucide="menu" class="w-6 h-6" x-show="!open"></i>
+                <i data-lucide="x" class="w-6 h-6" x-show="open" x-cloak></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="open" x-transition x-cloak class="md:hidden border-t border-border-dim bg-bg-panel absolute w-full left-0 top-16 shadow-2xl">
+            <div class="flex flex-col p-6 gap-6 font-mono text-sm uppercase tracking-wider">
+                <a href="../index.html" class="text-white flex items-center gap-3"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
+                <a href="../servicios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="layers" class="w-4 h-4"></i> Servicios</a>
+                <a href="../precios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="tag" class="w-4 h-4"></i> Precios</a>
+                <a href="../casos/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="briefcase" class="w-4 h-4"></i> Casos de Estudio</a>
+                <a href="../index.html#contact" class="text-accent-cyan flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4"></i> Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 min-h-screen">
+        
+        <header class="mb-16 text-center">
+            <span class="section-label mb-4 block"> — LO QUE EXPORTAMOS A PRODUCCIÓN</span>
+            <h1 class="font-oswald text-4xl md:text-6xl font-bold uppercase tracking-wider text-white mb-6">Sistemas que mueven negocios reales</h1>
+            <p class="font-mono text-text-muted text-lg max-w-2xl mx-auto">
+                No muestro "conceptos en Figma". Aquí solo hay soluciones RAG y arquitecturas estáticas desplegadas y dando ROI (Retorno de Inversión) medible.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Caso Coordinadora -->
+            <a href="coordinadora/index.html" class="panel-ff group flex flex-col h-full hover:scale-[1.02] transition-transform duration-300">
+                <div class="h-48 bg-bg-panel border-b border-border-dim overflow-hidden relative flex items-center justify-center">
+                    <div class="absolute inset-0 bg-accent-glow opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    <i data-lucide="package-search" class="w-16 h-16 text-accent-cyan opacity-80 group-hover:scale-110 transition-transform"></i>
+                    <div class="absolute bottom-2 right-2 bg-black px-2 py-1 text-[10px] font-mono text-white border border-border-dim">IA RAG</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="font-montserrat text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">Transportadora Coordinadora</h2>
+                    <p class="font-mono text-sm text-text-muted flex-grow mb-4">Chatbot de WhatsApp Business API anti-fricción para rastreo de guías con RAG, reduciendo 70% carga operativa.</p>
+                    <div class="font-oswald text-accent-cyan uppercase text-sm flex justify-between items-center mt-auto border-t border-border-dim pt-4">
+                        Ver cómo lo hice <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Placeholder Caso SEO -->
+            <div class="panel-ff group flex flex-col h-full opacity-60 pointer-events-none grayscale">
+                <div class="h-48 bg-bg-panel border-b border-border-dim overflow-hidden relative flex items-center justify-center">
+                    <i data-lucide="trending-up" class="w-16 h-16 text-white opacity-20"></i>
+                    <div class="absolute bottom-2 right-2 bg-black px-2 py-1 text-[10px] font-mono text-white border border-border-dim">SEO/GEO</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="font-montserrat text-xl font-bold text-white mb-2">Clínica Dental Bogotá (Próximamente)</h2>
+                    <p class="font-mono text-sm text-text-muted flex-grow mb-4">Dominio de búsqueda local e indexación para IA en menos de 2 meses.</p>
+                </div>
+            </div>
+
+            <!-- Placeholder Caso Web -->
+            <div class="panel-ff group flex flex-col h-full opacity-60 pointer-events-none grayscale">
+                <div class="h-48 bg-bg-panel border-b border-border-dim overflow-hidden relative flex items-center justify-center">
+                    <i data-lucide="layout" class="w-16 h-16 text-white opacity-20"></i>
+                    <div class="absolute bottom-2 right-2 bg-black px-2 py-1 text-[10px] font-mono text-white border border-border-dim">B2B PLATFORM</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="font-montserrat text-xl font-bold text-white mb-2">Software Gestión de Inventarios</h2>
+                    <p class="font-mono text-sm text-text-muted flex-grow mb-4">Panel de alta densidad arquitectónica en modo estático para velocidad extrema.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 border-t border-border-dim pt-12 text-center">
+            <h3 class="font-oswald text-2xl uppercase text-white mb-4">¿Quieres construir algo similar?</h3>
+            <a href="https://wa.me/573166644714?text=Hola,%20acabo%20de%20ver%20tu%20portafolio%20y%20quiero%20crear%20algo%20para%20mi%20negocio." target="_blank" class="inline-flex items-center gap-2 border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-3 px-8 rounded-[2px] transition-colors">
+                <i data-lucide="mail" class="w-5 h-5"></i> Agendar sesión de descubrimiento
+            </a>
+        </div>
+    </main>
+
+    <footer class="border-t border-border-dim bg-bg-panel py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center md:text-left">
+            <h4 class="font-oswald text-xl text-white tracking-widest uppercase">Inge Fonsi</h4>
+            <p class="text-text-muted text-xs mt-1">Consultoría Estratégica en Tecnología</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

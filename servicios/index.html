@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <!-- Google Analytics 4 (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV7L3WXM8X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MV7L3WXM8X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de SEO, GEO e IA en Bogotá | Inge Fonsi</title>
+    <link rel="canonical" href="https://ingefonsi.vercel.app/servicios/">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <meta name="description" content="Servicios especializados en visibilidad digital, SEO técnico, posicionamiento en ChatGPT (GEO) y automatización con bots IA RAG para negocios en Colombia.">
+    <meta name="author" content="Oscar Alfonso Ochoa Caballero">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Servicios de SEO, GEO e IA en Bogotá | Inge Fonsi">
+    <meta property="og:description" content="Servicios especializados en visibilidad digital, SEO técnico, posicionamiento en ChatGPT (GEO) y automatización con bots IA RAG para negocios en Colombia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ingefonsi.vercel.app/servicios/">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servicios de SEO, GEO e IA en Bogotá | Inge Fonsi">
+    <meta name="twitter:description" content="Servicios especializados en visibilidad digital, SEO técnico, posicionamiento en ChatGPT (GEO) y automatización con bots IA RAG para negocios en Colombia.">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://ingefonsi.vercel.app/servicios/geo-visibilidad-ia/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://ingefonsi.vercel.app/servicios/seo-tecnico-bogota/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://ingefonsi.vercel.app/servicios/auditoria-geo-seo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://ingefonsi.vercel.app/servicios/chatbot-ia-negocio/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://ingefonsi.vercel.app/servicios/landing-pages-bogota/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-base': '#0c0d12',
+                        'bg-panel': '#13151f',
+                        'border-dim': '#1f2231',
+                        'accent-cyan': '#00bcd4',
+                        'accent-orange': '#ff5722',
+                    },
+                    fontFamily: {
+                        oswald: ['Oswald', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        mono: ['Roboto Mono', 'monospace'],
+                        fira: ['Fira Code', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
+
+        <!-- ===================== TOP NAVIGATION ===================== -->
+    <nav x-data="{ open: false }" class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md fixed top-0 z-50 transition-all duration-300">
+        <div class="absolute bottom-0 left-0 w-full h-[2px] bg-transparent pointer-events-none">
+            <div id="scroll-progress-horizontal" class="h-full bg-accent-cyan shadow-[0_0_10px_rgba(0,188,212,0.8)] w-0"></div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded-[2px] border border-accent-cyan flex items-center justify-center group-hover:bg-accent-cyan/10 transition-colors">
+                    <span class="font-oswald text-accent-cyan text-sm font-bold">IF</span>
+                </div>
+                <span class="font-oswald text-lg tracking-wider font-bold text-white hidden sm:block">INGE FONSI</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
+                <a href="../index.html" class="text-text-muted hover:text-white transition-colors">Inicio</a>
+                <a href="../servicios/index.html" class="text-text-muted hover:text-white transition-colors">Servicios</a>
+                <a href="../precios/index.html" class="text-text-muted hover:text-white transition-colors">Precios</a>
+                <a href="../casos/index.html" class="text-text-muted hover:text-white transition-colors">Casos</a>
+                <a href="../index.html#contact" class="text-accent-cyan hover:text-white transition-colors border border-accent-cyan px-4 py-1.5 rounded-[2px] bg-accent-cyan/10 hover:bg-accent-cyan">Contacto</a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button @click="open = !open" class="md:hidden text-white flex items-center">
+                <i data-lucide="menu" class="w-6 h-6" x-show="!open"></i>
+                <i data-lucide="x" class="w-6 h-6" x-show="open" x-cloak></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="open" x-transition x-cloak class="md:hidden border-t border-border-dim bg-bg-panel absolute w-full left-0 top-16 shadow-2xl">
+            <div class="flex flex-col p-6 gap-6 font-mono text-sm uppercase tracking-wider">
+                <a href="../index.html" class="text-white flex items-center gap-3"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
+                <a href="../servicios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="layers" class="w-4 h-4"></i> Servicios</a>
+                <a href="../precios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="tag" class="w-4 h-4"></i> Precios</a>
+                <a href="../casos/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="briefcase" class="w-4 h-4"></i> Casos de Estudio</a>
+                <a href="../index.html#contact" class="text-accent-cyan flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4"></i> Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 min-h-screen relative">
+        <div class="text-center mb-16">
+            <h1 class="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-wider text-white">Servicios Especializados</h1>
+            <p class="mt-4 text-text-muted font-mono max-w-2xl mx-auto">Ingeniería de visibilidad y automatización para negocios que no tienen tiempo que perder.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- GEO -->
+            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-accent-cyan opacity-5 blur-[80px]"></div>
+                <i data-lucide="bot" class="w-8 h-8 text-accent-cyan mb-4"></i>
+                <h3 class="font-montserrat text-2xl font-bold text-white mb-2">GEO: Visibilidad en IAs</h3>
+                <p class="font-mono text-text-muted text-sm mb-4 flex-grow">
+                    Estrategia para que ChatGPT, Perplexity y Gemini citen tu negocio cuando los usuarios preguntan por servicios en Bogotá.
+                </p>
+                <div class="text-xs text-text-muted mb-6 uppercase tracking-wider font-montserrat">
+                    <span class="text-white block mb-1">— Para quién es:</span>
+                    Empresas y profesionales que la IA ignora actualmente.
+                </div>
+                <div class="mt-auto">
+                    <a href="geo-visibilidad-ia/index.html" class="inline-flex items-center gap-2 border border-accent-cyan/50 text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-2 px-6 rounded-[2px] transition-colors w-full justify-center">
+                        Ver detalle de GEO <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEO Técnico -->
+            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-accent-orange opacity-5 blur-[80px]"></div>
+                <i data-lucide="search" class="w-8 h-8 text-accent-cyan mb-4"></i>
+                <h3 class="font-montserrat text-2xl font-bold text-white mb-2">SEO Técnico en Bogotá</h3>
+                <p class="font-mono text-text-muted text-sm mb-4 flex-grow">
+                    Estructura web de alto rendimiento (100/100 Core Web Vitals) y optimización de Google Business Profile.
+                </p>
+                <div class="text-xs text-text-muted mb-6 uppercase tracking-wider font-montserrat">
+                    <span class="text-white block mb-1">— Para quién es:</span>
+                    Negocios que quieren dominar búsquedas locales.
+                </div>
+                <div class="mt-auto">
+                    <a href="seo-tecnico-bogota/index.html" class="inline-flex items-center gap-2 border border-accent-cyan/50 text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-2 px-6 rounded-[2px] transition-colors w-full justify-center">
+                        Ver detalle SEO <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chatbot -->
+            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-accent-cyan opacity-5 blur-[80px]"></div>
+                <i data-lucide="message-square-quote" class="w-8 h-8 text-accent-cyan mb-4"></i>
+                <h3 class="font-montserrat text-2xl font-bold text-white mb-2">Chatbot RAG de Negocio</h3>
+                <p class="font-mono text-text-muted text-sm mb-4 flex-grow">
+                    Sistemas en WhatsApp o Web entrenados solo con tus datos corporativos. Sin alucinaciones de la IA gratis.
+                </p>
+                <div class="text-xs text-text-muted mb-6 uppercase tracking-wider font-montserrat">
+                    <span class="text-white block mb-1">— Para quién es:</span>
+                    Empresas con alto volumen de atención al cliente.
+                </div>
+                <div class="mt-auto">
+                    <a href="chatbot-ia-negocio/index.html" class="inline-flex items-center gap-2 border border-accent-cyan/50 text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-2 px-6 rounded-[2px] transition-colors w-full justify-center">
+                        Ver chatbots IA <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Landing Pages -->
+            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-accent-orange opacity-5 blur-[80px]"></div>
+                <i data-lucide="layout-template" class="w-8 h-8 text-accent-cyan mb-4"></i>
+                <h3 class="font-montserrat text-2xl font-bold text-white mb-2">Landing Pages de Alta Conversión</h3>
+                <p class="font-mono text-text-muted text-sm mb-4 flex-grow">
+                    Desarrollo web a medida con arquitectura técnica que Google y las IA pueden leer perfectamente. 
+                </p>
+                <div class="text-xs text-text-muted mb-6 uppercase tracking-wider font-montserrat">
+                    <span class="text-white block mb-1">— Para quién es:</span>
+                    Venta de servicios B2B, Software y Campañas de Ads.
+                </div>
+                <div class="mt-auto">
+                    <a href="landing-pages-bogota/index.html" class="inline-flex items-center gap-2 border border-accent-cyan/50 text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-2 px-6 rounded-[2px] transition-colors w-full justify-center">
+                        Ver Lands Web <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Auditoría -->
+            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden md:col-span-2 md:w-2/3 md:mx-auto">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-accent-cyan opacity-5 blur-[80px]"></div>
+                <i data-lucide="file-check-2" class="w-8 h-8 text-accent-cyan mb-4"></i>
+                <h3 class="font-montserrat text-2xl font-bold text-white mb-2">Auditoría SEO + GEO Completa</h3>
+                <p class="font-mono text-text-muted text-sm mb-4 flex-grow">
+                    El servicio de diagnóstico. Revisión profunda de por qué no vendes en buscadores y una hoja de ruta técnica clara para resolverlo.
+                </p>
+                <div class="text-xs text-text-muted mb-6 uppercase tracking-wider font-montserrat">
+                    <span class="text-white block mb-1">— Para quién es:</span>
+                    Quienes necesitan un plan de acción rápido y claro.
+                </div>
+                <div class="mt-auto">
+                    <a href="auditoria-geo-seo/index.html" class="inline-flex items-center gap-2 border border-accent-cyan/50 text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-2 px-6 rounded-[2px] transition-colors w-full justify-center">
+                        Ver Auditorías <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-border-dim bg-bg-panel py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="font-oswald text-xl text-white tracking-widest uppercase">Inge Fonsi</h4>
+                <p class="text-text-muted text-xs mt-1">Consultoría Estratégica en Tecnología</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="__GITHUB_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+                <a href="__LINKEDIN_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+                <a href="__TIKTOK_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png" alt="TikTok"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+                <a href="__TWITTER_URL__" target="_blank" class="group transition-all">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png" alt="X"
+                        class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]">
+                </a>
+            </div>
+            <div class="font-mono text-[10px] text-text-muted uppercase text-center md:text-right">
+                Hecho con ingenio. Mejorado con experiencia.<br>
+                © 2026 Oscar Ochoa.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="fixed bottom-6 right-6 z-[70]">
+        <a href=" https://wa.me/573001234567?text=Hola%20Oscar%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20Servicios."
+            target="_blank"
+            class="flex items-center justify-center w-14 h-14 bg-accent-cyan rounded-full text-black hover:bg-accent-orange transition-colors duration-300 animate-pulse-cyan shadow-[0_0_15px_rgba(0,188,212,0.5)] group relative"
+            title="Escríbeme directo">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

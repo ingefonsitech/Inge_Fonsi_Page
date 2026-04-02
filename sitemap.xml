@@ -4,13 +4,56 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://ingefonsi.vercel.app/</loc>
-  <lastmod>2026-03-23T17:28:45+00:00</lastmod>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
-
+<url>
+  <loc>https://ingefonsi.vercel.app/servicios/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/servicios/geo-visibilidad-ia/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/servicios/seo-tecnico-bogota/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/servicios/chatbot-ia-negocio/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/servicios/landing-pages-bogota/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/servicios/auditoria-geo-seo/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/precios/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/casos/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ingefonsi.vercel.app/casos/coordinadora/</loc>
+  <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>

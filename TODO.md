@@ -52,3 +52,16 @@
 - [x] Prueba 375px / 768px / 1280px
 - [x] Sin rutas absolutas, console.logs ni API keys
 - [x] Push a GitHub y conexión con Vercel Hobby
+
+## FASE 6 — Expansión a Multi-Página (Estructura y Correcciones)
+- [x] Crear directorios estáticos `/servicios/`, `/precios/`, y `/casos/`
+- [x] Migrar navegación a 'Top Nav' en reemplazo del 'Lateral HUD'
+- [x] Generar scripts Windows (`build.ps1` y `update_nav.ps1`) para compilación
+- [x] Corrección definitiva de corrupciones encoding UTF-8 / BOM
+- [x] Revisión y pruebas de enlaces cruzados
+
+## FASE 7 — Contenido y Zona de Blog
+- [~] Preparación de carpeta `/blog/drafts/` con archivos Markdown de base
+- [ ] Construir y diseñar template UI final para cada artículo (`/blog/template.html`)
+- [ ] Redacción y publicación progresiva de los 12 artículos de blog
+- [ ] Conectar artículos al `sitemap.xml` para SEO Técnico

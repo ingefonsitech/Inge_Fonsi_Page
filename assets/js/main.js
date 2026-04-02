@@ -103,17 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         animateCounter(counter, target);
     });
 
-    // === Telemetría HUD (Barras de progreso Horizontal y Vertical) ===
-    gsap.to('#scroll-progress-vertical', {
-        height: '100%',
-        ease: 'none',
-        scrollTrigger: {
-            trigger: document.documentElement,
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: 1
-        }
-    });
+    // === Telemetría (Barra de progreso Horizontal superior) ===
 
     gsap.to('#scroll-progress-horizontal', {
         width: '100%',
