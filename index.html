@@ -6,7 +6,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV7L3WXM8X"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-MV7L3WXM8X');
     </script>
@@ -16,7 +16,7 @@
     <title>Oscar Ochoa (Inge Fonsi) | Consultor SEO de IA (GEO) y Estrategia Digital</title>
     <link rel="canonical" href="https://ingefonsi.vercel.app/">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-    
+
     <!-- Meta SEO & GEO (Generative Engine Optimization) -->
     <meta name="description"
         content="¿Tu negocio aparece en ChatGPT? Especialista en SEO de IA (GEO) para posicionar tu marca en Gemini, Perplexity y buscadores de nueva generación en Bogotá. Sin agencias, resultados reales.">
@@ -34,7 +34,8 @@
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Oscar Ochoa (Inge Fonsi)  Consultor SEO, GEO e IA en Bogotá">
-    <meta name="twitter:description" content="Especialista en visibilidad digital real para negocios en Bogotá. SEO técnico, optimización para ChatGPT y Perplexity (GEO), y chatbots de negocio con IA.">
+    <meta name="twitter:description"
+        content="Especialista en visibilidad digital real para negocios en Bogotá. SEO técnico, optimización para ChatGPT y Perplexity (GEO), y chatbots de negocio con IA.">
 
     <!-- Schema.org estructurado (Organization + LocalBusiness + Person) -->
     <script type="application/ld+json">
@@ -116,25 +117,31 @@
 
 <body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
     <!-- ===================== TOP NAVIGATION ===================== -->
-    <nav x-data="{ open: false }" class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md fixed top-0 z-50 transition-all duration-300">
+    <nav x-data="{ open: false }"
+        class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md fixed top-0 z-50 transition-all duration-300">
         <div class="absolute bottom-0 left-0 w-full h-[2px] bg-transparent pointer-events-none">
-            <div id="scroll-progress-horizontal" class="h-full bg-accent-cyan shadow-[0_0_10px_rgba(0,188,212,0.8)] w-0"></div>
+            <div id="scroll-progress-horizontal"
+                class="h-full bg-accent-cyan shadow-[0_0_10px_rgba(0,188,212,0.8)] w-0"></div>
         </div>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 group">
-                <div class="w-8 h-8 rounded-[2px] border border-accent-cyan flex items-center justify-center group-hover:bg-accent-cyan/10 transition-colors">
+                <div
+                    class="w-8 h-8 rounded-[2px] border border-accent-cyan flex items-center justify-center group-hover:bg-accent-cyan/10 transition-colors">
                     <span class="font-oswald text-accent-cyan text-sm font-bold">IF</span>
                 </div>
                 <span class="font-oswald text-lg tracking-wider font-bold text-white hidden sm:block">INGE FONSI</span>
             </a>
-            
+
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
                 <a href="#hero" class="text-white border-b-2 border-accent-cyan pb-1">Inicio</a>
-                <a href="servicios/index.html" class="text-text-muted hover:text-accent-cyan transition-colors">Servicios</a>
-                <a href="precios/index.html" class="text-text-muted hover:text-accent-cyan transition-colors">Precios</a>
+                <a href="servicios/index.html"
+                    class="text-text-muted hover:text-accent-cyan transition-colors">Servicios</a>
+                <a href="precios/index.html"
+                    class="text-text-muted hover:text-accent-cyan transition-colors">Precios</a>
                 <a href="casos/index.html" class="text-text-muted hover:text-accent-cyan transition-colors">Casos</a>
-                <a href="#contact" class="text-accent-cyan hover:text-white transition-colors border border-accent-cyan px-4 py-1.5 rounded-[2px] bg-accent-cyan/10 hover:bg-accent-cyan">Contacto</a>
+                <a href="#contact"
+                    class="text-accent-cyan hover:text-white transition-colors border border-accent-cyan px-4 py-1.5 rounded-[2px] bg-accent-cyan/10 hover:bg-accent-cyan">Contacto</a>
             </div>
 
             <!-- Mobile Hamburger -->
@@ -145,32 +152,41 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div x-show="open" x-transition x-cloak class="md:hidden border-t border-border-dim bg-bg-panel absolute w-full left-0 top-16 shadow-2xl">
+        <div x-show="open" x-transition x-cloak
+            class="md:hidden border-t border-border-dim bg-bg-panel absolute w-full left-0 top-16 shadow-2xl">
             <div class="flex flex-col p-6 gap-6 font-mono text-sm uppercase tracking-wider">
-                <a href="#hero" @click="open = false" class="text-white flex items-center gap-3"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
-                <a href="servicios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="layers" class="w-4 h-4"></i> Servicios</a>
-                <a href="precios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="tag" class="w-4 h-4"></i> Precios</a>
-                <a href="casos/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="briefcase" class="w-4 h-4"></i> Casos de Estudio</a>
-                <a href="#contact" @click="open = false" class="text-accent-cyan flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4"></i> Contacto</a>
+                <a href="#hero" @click="open = false" class="text-white flex items-center gap-3"><i data-lucide="home"
+                        class="w-4 h-4"></i> Inicio</a>
+                <a href="servicios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i
+                        data-lucide="layers" class="w-4 h-4"></i> Servicios</a>
+                <a href="precios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i
+                        data-lucide="tag" class="w-4 h-4"></i> Precios</a>
+                <a href="casos/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i
+                        data-lucide="briefcase" class="w-4 h-4"></i> Casos de Estudio</a>
+                <a href="#contact" @click="open = false" class="text-accent-cyan flex items-center gap-3"><i
+                        data-lucide="mail" class="w-4 h-4"></i> Contacto</a>
             </div>
         </div>
     </nav>8,212,0.8)] w-0"></div>
-        </div>
+    </div>
     </nav>
 
     <!-- ===================== HERO SECTION ===================== -->
     <section id="hero"
         class="relative h-[80vh] min-h-[600px] flex flex-col items-center justify-center overflow-hidden w-full pt-16 md:pt-20">
         <div id="hero-scroll-fade" class="relative z-10 text-center w-full px-4 flex flex-col items-center">
-            
+
             <h1 id="hero-title"
                 class="font-oswald font-bold uppercase tracking-wide text-[clamp(2.5rem,5vw,5rem)] leading-[1.1] text-white flex flex-col items-center max-w-5xl">
-                <span class="block overflow-hidden pb-1"><span class="hero-word block">Tu negocio necesita existir</span></span>
-                <span class="block overflow-hidden pb-2"><span class="hero-word block text-accent-cyan">donde la gente busca hoy.</span></span>
+                <span class="block overflow-hidden pb-1"><span class="hero-word block">Tu negocio necesita
+                        existir</span></span>
+                <span class="block overflow-hidden pb-2"><span class="hero-word block text-accent-cyan">donde la gente
+                        busca hoy.</span></span>
             </h1>
 
             <p id="hero-label" class="mt-6 text-xl md:text-2xl text-text-muted font-montserrat max-w-3xl">
-                No solo en Google  también en <span class="text-white font-semibold">ChatGPT, Perplexity y WhatsApp.</span>
+                No solo en Google también en <span class="text-white font-semibold">ChatGPT, Perplexity y
+                    WhatsApp.</span>
             </p>
 
             <p id="hero-desc" class="mt-6 max-w-2xl font-mono text-text-muted text-sm md:text-base leading-relaxed">
@@ -206,37 +222,48 @@
     <section id="problem" class="pt-16 pb-12 max-w-6xl mx-auto px-4 relative z-20">
         <div class="text-center mb-12">
             <span class="section-label"> LA REALIDAD DEL MERCADO EN 2026</span>
-            <h2 class="font-oswald text-3xl md:text-4xl uppercase mt-4 text-white">El juego de la visibilidad cambió.</h2>
+            <h2 class="font-oswald text-3xl md:text-4xl uppercase mt-4 text-white">El juego de la visibilidad cambió.
+            </h2>
         </div>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Card 1 -->
             <div class="panel-ff p-8 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-accent-cyan blur-[50px] opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                <div
+                    class="absolute top-0 right-0 w-24 h-24 bg-accent-cyan blur-[50px] opacity-10 group-hover:opacity-20 transition-opacity">
+                </div>
                 <i data-lucide="bot" class="text-accent-cyan w-10 h-10 mb-6"></i>
                 <h3 class="font-oswald text-2xl text-white mb-3">Las IAs responden primero</h3>
                 <p class="font-mono text-sm text-text-muted leading-relaxed">
-                    Más del <span class="text-white font-bold">60%</span> de las búsquedas ya generan una respuesta de IA antes de mostrar el primer enlace azul de Google. Si no estás siendo citado, eres invisible.
+                    Más del <span class="text-white font-bold">60%</span> de las búsquedas ya generan una respuesta de
+                    IA antes de mostrar el primer enlace azul de Google. Si no estás siendo citado, eres invisible.
                 </p>
             </div>
 
             <!-- Card 2 -->
             <div class="panel-ff p-8 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-accent-orange blur-[50px] opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                <div
+                    class="absolute top-0 right-0 w-24 h-24 bg-accent-orange blur-[50px] opacity-10 group-hover:opacity-20 transition-opacity">
+                </div>
                 <i data-lucide="message-square-off" class="text-accent-orange w-10 h-10 mb-6"></i>
                 <h3 class="font-oswald text-2xl text-white mb-3">WhatsApp se cerró</h3>
                 <p class="font-mono text-sm text-text-muted leading-relaxed">
-                    Meta bloqueó a ChatGPT y Perplexity en WhatsApp Business. Los chatbots genéricos murieron. Solo los sistemas RAG con conocimiento propio de tu negocio pueden operar.
+                    Meta bloqueó a ChatGPT y Perplexity en WhatsApp Business. Los chatbots genéricos murieron. Solo los
+                    sistemas RAG con conocimiento propio de tu negocio pueden operar.
                 </p>
             </div>
 
             <!-- Card 3 -->
             <div class="panel-ff p-8 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-accent-cyan blur-[50px] opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                <div
+                    class="absolute top-0 right-0 w-24 h-24 bg-accent-cyan blur-[50px] opacity-10 group-hover:opacity-20 transition-opacity">
+                </div>
                 <i data-lucide="trending-up" class="text-accent-cyan w-10 h-10 mb-6"></i>
                 <h3 class="font-oswald text-2xl text-white mb-3">La carrera en Colombia</h3>
                 <p class="font-mono text-sm text-text-muted leading-relaxed">
-                    El <span class="text-white font-bold">77%</span> de las PYMES colombianas planean invertir en IA este año. La pregunta no es si vas a entrar al juego, sino si tu competencia va a llegar antes que tú.
+                    El <span class="text-white font-bold">77%</span> de las PYMES colombianas planean invertir en IA
+                    este año. La pregunta no es si vas a entrar al juego, sino si tu competencia va a llegar antes que
+                    tú.
                 </p>
             </div>
         </div>
@@ -258,7 +285,7 @@
                     <p>
                         He pasado los últimos años en empresas de logística crítica como <span
                             class="text-white">Coordinadora Mercantil</span>, donde entendí que los sistemas no fallan
-                        solos  fallan porque nadie los entiende de verdad. Mi enfoque no es solo "programar", sino
+                        solos fallan porque nadie los entiende de verdad. Mi enfoque no es solo "programar", sino
                         diagnosticar y optimizar procesos que otros dan por perdidos.
                     </p>
                     <p>
@@ -304,7 +331,8 @@
     <section id="services" class="py-16 md:py-24 max-w-6xl mx-auto px-4 relative z-20">
         <div class="text-center mb-16">
             <span class="section-label mb-4 block"> LO QUE SÉ HACER</span>
-            <h2 class="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-wider text-white">Servicios Especializados</h2>
+            <h2 class="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-wider text-white">Servicios
+                Especializados</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -313,10 +341,12 @@
                 <i data-lucide="bot" class="w-8 h-8 text-accent-cyan mb-6 group-hover:animate-pulse-cyan"></i>
                 <h3 class="font-montserrat text-xl font-bold text-white mb-3">GEO: Visibilidad en IAs y LLMs</h3>
                 <p class="font-mono text-text-muted text-sm mb-6 flex-grow">
-                    Haz que ChatGPT, Perplexity y Gemini citen tu negocio cuando los usuarios preguntan por tus servicios en Bogotá.
+                    Haz que ChatGPT, Perplexity y Gemini citen tu negocio cuando los usuarios preguntan por tus
+                    servicios en Bogotá.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border-dim">
-                    <a href="servicios/geo-visibilidad-ia/index.html" class="text-accent-cyan font-mono text-xs hover:text-white transition-colors flex items-center gap-1 uppercase tracking-wider hidden md:flex">
+                    <a href="servicios/geo-visibilidad-ia/index.html"
+                        class="text-accent-cyan font-mono text-xs hover:text-white transition-colors flex items-center gap-1 uppercase tracking-wider hidden md:flex">
                         Ver servicio <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                 </div>
@@ -327,10 +357,12 @@
                 <i data-lucide="search" class="w-8 h-8 text-accent-cyan mb-6 group-hover:animate-pulse-cyan"></i>
                 <h3 class="font-montserrat text-xl font-bold text-white mb-3">SEO Técnico para Motores</h3>
                 <p class="font-mono text-text-muted text-sm mb-6 flex-grow">
-                    Estructura técnica, Core Web Vitals 100/100 y datos estructurados. Ingeniería pura para dominar Google Maps y búsqueda tradicional.
+                    Estructura técnica, Core Web Vitals 100/100 y datos estructurados. Ingeniería pura para dominar
+                    Google Maps y búsqueda tradicional.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border-dim">
-                    <a href="servicios/seo-tecnico-bogota/index.html" class="text-accent-cyan font-mono text-xs hover:text-white transition-colors flex items-center gap-1 uppercase tracking-wider hidden md:flex">
+                    <a href="servicios/seo-tecnico-bogota/index.html"
+                        class="text-accent-cyan font-mono text-xs hover:text-white transition-colors flex items-center gap-1 uppercase tracking-wider hidden md:flex">
                         Ver servicio <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                 </div>
@@ -338,13 +370,16 @@
 
             <!-- Card 3: Chatbot -->
             <div class="panel-ff p-8 group flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-                <i data-lucide="message-square-quote" class="w-8 h-8 text-accent-cyan mb-6 group-hover:animate-pulse-cyan"></i>
+                <i data-lucide="message-square-quote"
+                    class="w-8 h-8 text-accent-cyan mb-6 group-hover:animate-pulse-cyan"></i>
                 <h3 class="font-montserrat text-xl font-bold text-white mb-3">Chatbot de Negocio con IA (RAG)</h3>
                 <p class="font-mono text-text-muted text-sm mb-6 flex-grow">
-                    Un sistema entrenado exclusivamente con el conocimiento de tu negocio. Responde presupuestos, FAQs y datos sin inventar nada.
+                    Un sistema entrenado exclusivamente con el conocimiento de tu negocio. Responde presupuestos, FAQs y
+                    datos sin inventar nada.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border-dim">
-                    <a href="servicios/chatbot-ia-negocio/index.html" class="text-accent-cyan font-mono text-xs hover:text-white transition-colors flex items-center gap-1 uppercase tracking-wider hidden md:flex">
+                    <a href="servicios/chatbot-ia-negocio/index.html"
+                        class="text-accent-cyan font-mono text-xs hover:text-white transition-colors flex items-center gap-1 uppercase tracking-wider hidden md:flex">
                         Ver servicio <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                 </div>
@@ -352,7 +387,8 @@
         </div>
 
         <div class="text-center mt-12">
-            <a href="servicios/index.html" class="inline-flex items-center justify-center gap-2 border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-3 px-8 rounded-[2px] transition-colors">
+            <a href="servicios/index.html"
+                class="inline-flex items-center justify-center gap-2 border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-3 px-8 rounded-[2px] transition-colors">
                 Ver todos los servicios
                 <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </a>
@@ -506,13 +542,6 @@
             <div class="md:w-2/3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div
                     class="panel-ff p-4 flex flex-col items-center justify-center group hover:border-accent-cyan transition-all">
-                    <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"
-                        class="w-10 h-10 mb-3 grayscale group-hover:grayscale-0">
-                    <span class="font-fira text-sm text-white group-hover:text-accent-cyan">Python</span>
-                </div>
-
-                <div
-                    class="panel-ff p-4 flex flex-col items-center justify-center group hover:border-accent-cyan transition-all">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="OpenAI"
                         class="w-10 h-10 mb-3 grayscale group-hover:grayscale-0 invert">
                     <span class="font-fira text-sm text-white group-hover:text-accent-cyan">OpenAI</span>
@@ -541,23 +570,11 @@
 
                 <div
                     class="panel-ff p-4 flex flex-col items-center justify-center group hover:border-accent-cyan transition-all">
-                    <img src="https://cdn.simpleicons.org/github/white" alt="GitHub"
+                    <img src="https://cdn.simpleicons.org/cloudflare/F38020" alt="Cloudflare"
                         class="w-10 h-10 mb-3 grayscale group-hover:grayscale-0">
-                    <span class="font-fira text-sm text-white group-hover:text-accent-cyan">GitHub</span>
+                    <span class="font-fira text-sm text-white group-hover:text-accent-cyan">Cloudflare</span>
                 </div>
 
-                <div
-                    class="panel-ff p-4 flex flex-col items-center justify-center group hover:border-accent-cyan transition-all">
-                    <img src="https://cdn.simpleicons.org/vercel/white" alt="Vercel"
-                        class="w-10 h-10 mb-3 grayscale group-hover:grayscale-0">
-                    <span class="font-fira text-sm text-white group-hover:text-accent-cyan">Vercel</span>
-                </div>
-
-                <div
-                    class="panel-ff p-4 flex flex-col items-center justify-center group hover:border-accent-cyan transition-all">
-                    <i data-lucide="database" class="w-10 h-10 mb-3 text-text-muted group-hover:text-accent-cyan"></i>
-                    <span class="font-fira text-sm text-white group-hover:text-accent-cyan">RAG / IA</span>
-                </div>
             </div>
         </div>
     </section>
