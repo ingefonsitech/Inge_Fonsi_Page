@@ -147,6 +147,8 @@
         <!-- ===================== TOP NAVIGATION ===================== -->
         <!-- ===================== TOP NAVIGATION ===================== -->
         <!-- ===================== TOP NAVIGATION ===================== -->
+        <!-- ===================== TOP NAVIGATION ===================== -->
+        <!-- ===================== TOP NAVIGATION ===================== -->
     <nav x-data="{ open: false }" class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md fixed top-0 z-50 transition-all duration-300">
         <div class="absolute bottom-0 left-0 w-full h-[2px] bg-transparent pointer-events-none">
             <div id="scroll-progress-horizontal" class="h-full bg-accent-cyan shadow-[0_0_10px_rgba(0,188,212,0.8)] w-0"></div>
@@ -169,11 +171,12 @@
                     </a>
                     <div x-show="dropdownOpen" x-transition x-cloak class="absolute top-full left-0 mt-4 w-56 bg-bg-panel border border-border-dim shadow-xl rounded-[2px] py-2 z-50">
                         <div class="absolute -top-4 left-0 w-full h-4"></div>
-                        <a href="../servicios/geo-visibilidad-ia/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">GEO Visibilidad IA</a>
-                        <a href="../servicios/seo-tecnico-bogota/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">SEO T&eacute;cnico</a>
-                        <a href="../servicios/chatbot-ia-negocio/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Chatbot IA (RAG)</a>
-                        <a href="../servicios/landing-pages-bogota/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Landing Pages</a>
-                        <a href="../servicios/auditoria-geo-seo/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Auditor&iacute;a SEO + GEO</a>
+                        <a href="../servicios/seo-geo-ingenieria/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Ingenier&iacute;a SEO + GEO</a>
+                        <a href="../servicios/agente-ia-whatsapp/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Agente IA WhatsApp</a>
+                        <a href="../servicios/chatbot-ia-empresarial/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Chatbots Especializados</a>
+                        <a href="../servicios/desarrollo-web-bogota/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Desarrollo Web Pro</a>
+                        <a href="../servicios/workshops-ia-equipos/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Workshops IA</a>
+                        <a href="../servicios/consultoria-auditoria-ia/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Auditor&iacute;as 1a1</a>
                     </div>
                 </div>
 
@@ -200,11 +203,12 @@
                         <button class="p-1"><i data-lucide="chevron-down" class="w-4 h-4 transition-transform" :class="servOpen ? 'rotate-180' : ''"></i></button>
                     </div>
                     <div x-show="servOpen" x-transition x-cloak class="pl-7 flex flex-col gap-4 border-l border-border-dim ml-2 mt-4 text-xs">
-                        <a href="../servicios/geo-visibilidad-ia/index.html" class="text-text-muted hover:text-accent-cyan">GEO Visibilidad IA</a>
-                        <a href="../servicios/seo-tecnico-bogota/index.html" class="text-text-muted hover:text-accent-cyan">SEO T&eacute;cnico</a>
-                        <a href="../servicios/chatbot-ia-negocio/index.html" class="text-text-muted hover:text-accent-cyan">Chatbot IA (RAG)</a>
-                        <a href="../servicios/landing-pages-bogota/index.html" class="text-text-muted hover:text-accent-cyan">Landing Pages</a>
-                        <a href="../servicios/auditoria-geo-seo/index.html" class="text-text-muted hover:text-accent-cyan">Auditor&iacute;a SEO + GEO</a>
+                        <a href="../servicios/seo-geo-ingenieria/index.html" class="text-text-muted hover:text-accent-cyan">Ingenier&iacute;a SEO + GEO</a>
+                        <a href="../servicios/agente-ia-whatsapp/index.html" class="text-text-muted hover:text-accent-cyan">Agente IA WhatsApp</a>
+                        <a href="../servicios/chatbot-ia-empresarial/index.html" class="text-text-muted hover:text-accent-cyan">Chatbots Especializados</a>
+                        <a href="../servicios/desarrollo-web-bogota/index.html" class="text-text-muted hover:text-accent-cyan">Desarrollo Web Pro</a>
+                        <a href="../servicios/workshops-ia-equipos/index.html" class="text-text-muted hover:text-accent-cyan">Workshops IA</a>
+                        <a href="../servicios/consultoria-auditoria-ia/index.html" class="text-text-muted hover:text-accent-cyan">Auditor&iacute;as 1a1</a>
                     </div>
                 </div>
 
@@ -215,242 +219,222 @@
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-4 lg:px-6 py-20 min-h-screen">
-        <header class="mb-20 text-center">
-            <span class="section-label mb-4 block"> — INVERSIÓN TRANSPARENTE</span>
-            <h1 class="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-wider text-white mb-6">Planes de Ingeniería de Visibilidad</h1>
-            <p class="font-mono text-text-muted text-lg max-w-2xl mx-auto">
-                No confío en las agencias que esconden sus precios. Aquí tienes los rangos reales de acuerdo al alcance y complejidad técnica del sistema.
+    <main x-data="{ 
+            selectedPlan: 'seo_geo_duo', 
+            tier: 'basic', 
+            level: 'basic',
+            get whatsappLink() {
+                const base = 'https://wa.me/573024505051?text=';
+                const messages = {
+                    'auditoria': 'Me%20interesa%20la%20Auditor%C3%ADa%20SEO%2BGEO%20(PDF%2BSesi%C3%B3n)',
+                    'landing': 'Quiero%20una%20Landing%20GEO%20' + (this.tier === 'basic' ? 'Básica' : 'Pro'),
+                    'chatbot': 'Interesado%20en%20Chatbot%20RAG%20' + (this.level === 'basic' ? 'Básico' : 'Avanzado'),
+                    'seo_mensual': 'Me%20interesa%20el%20Plan%20SEO%20Mensual',
+                    'seo_geo_duo': 'Quiero%20el%20Combo%20Duo%20SEO%2BGEO',
+                    'integral': 'Interesado%20en%20el%20Paquete%20Integral%20Premium'
+                };
+                return base + messages[this.selectedPlan];
+            },
+            get buttonText() {
+                const texts = {
+                    'auditoria': 'Agendar Mi Auditor&iacute;a',
+                    'landing': 'Construir Mi Web',
+                    'chatbot': 'Activar Vendedor IA',
+                    'seo_mensual': 'Saber M&aacute;s del Plan SEO',
+                    'seo_geo_duo': 'DOMINAR EL MERCADO',
+                    'integral': 'Transformar Mi Negocio'
+                };
+                return texts[this.selectedPlan];
+            }
+        }" 
+        class="max-w-7xl mx-auto px-4 lg:px-6 py-20 min-h-screen relative z-10">
+        <!-- Hero Precios -->
+        <header class="text-center mb-16">
+            <span class="section-label mb-4 block animate-fade-in">PLANES Y MEMBRES&Iacute;AS</span>
+            <h1 class="font-oswald text-4xl md:text-6xl font-bold uppercase tracking-wider text-white mb-6">
+                Inversi&oacute;n en <span class="text-accent-cyan">Visibilidad Real</span>
+            </h1>
+            <p class="font-mono text-text-muted text-lg max-w-2xl mx-auto italic">
+                Selecciona el plan que mejor se adapte a tu etapa actual y activa tu crecimiento.
             </p>
         </header>
 
-        <!-- PLANES ÚNICOS -->
-        <h2 class="font-oswald text-2xl uppercase text-white mb-8 border-b border-border-dim pb-2 inline-block">Proyectos Únicos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24 items-stretch">
-            
-            <!-- Auditoría Entrada -->
-            <div class="panel-ff p-6 bg-bg-panel/50 hover:bg-bg-panel transition-colors flex flex-col relative overflow-hidden group">
-                <div class="mb-6 h-32 flex justify-center items-center">
-                    <img src="../assets/img/auditoria_icon_1775103682165.png" alt="Auditoría" class="h-28 object-contain drop-shadow-[0_0_15px_rgba(0,188,212,0.3)] group-hover:scale-110 transition-transform duration-500">
+        <!-- Pricing Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Plan 1: Auditoría -->
+            <div @click="selectedPlan = 'auditoria'" 
+                 :class="selectedPlan === 'auditoria' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
+                <div class="mb-6">
+                    <span class="text-accent-cyan font-fira text-[10px] uppercase tracking-widest border border-accent-cyan/30 px-2 py-0.5 rounded-sm">Punto de Partida</span>
+                    <h3 class="font-oswald text-2xl text-white mt-4 uppercase">Auditor&iacute;a SEO+GEO</h3>
+                    <div class="mt-2 flex items-baseline gap-1">
+                        <span class="text-3xl font-bold text-white">$300k</span>
+                        <span class="text-text-muted text-xs font-mono uppercase">pago &uacute;nico</span>
+                    </div>
                 </div>
-                <h3 class="font-montserrat text-xl font-bold text-white mb-2">Auditoría SEO + GEO</h3>
-                <p class="font-mono text-xs text-text-muted mb-6">Diagnóstico completo de visibilidad en Google y LLMs.</p>
-                <div class="mb-6 border-b border-border-dim pb-4">
-                    <span class="font-oswald text-3xl font-bold text-white block">~$400K <span class="text-sm font-normal text-text-muted">COP</span></span>
-                    <span class="text-[10px] uppercase tracking-wider text-text-muted mt-1 block">Rango: $300K - $500K</span>
-                </div>
-                <ul class="space-y-4 font-mono text-xs text-text-muted flex-grow mb-8">
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Diagnóstico Técnico SEO</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Análisis GEO (ChatGPT)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Keywords & Competidores</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> PDF Detallado + Sesión de 30m</li>
+                <ul class="space-y-4 font-mono text-xs text-text-muted mb-8 flex-grow">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="file-text" class="w-4 h-4 text-accent-cyan mt-0.5"></i>
+                        <span>Reporte PDF Técnico con hallazgos críticos.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="video" class="w-4 h-4 text-accent-cyan mt-0.5"></i>
+                        <span>Sesi&oacute;n en vivo de 90 min (Consultor&iacute;a 1a1).</span>
+                    </li>
                 </ul>
-                <a href="https://wa.me/__WHATSAPP_NUMBER__" class="block text-center mt-auto border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat font-bold uppercase py-2 text-sm rounded-[2px] transition-colors">Pedir Diagnóstico</a>
             </div>
 
-            <!-- Landing Page -->
-            <div class="panel-ff p-6 bg-bg-panel/50 hover:bg-bg-panel transition-colors flex flex-col relative overflow-hidden group">
-                <div class="mb-6 h-32 flex justify-center items-center">
-                    <img src="../assets/img/landing_icon_1775103700668.png" alt="Landing Page" class="h-28 object-contain drop-shadow-[0_0_15px_rgba(0,188,212,0.3)] group-hover:scale-110 transition-transform duration-500">
+            <!-- Plan 2: Landing Page GEO -->
+            <div @click="selectedPlan = 'landing'" 
+                 :class="selectedPlan === 'landing' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
+                <div class="mb-6">
+                    <span class="text-accent-cyan font-fira text-[10px] uppercase tracking-widest border border-accent-cyan/30 px-2 py-0.5 rounded-sm">Web de Alto Rendimiento</span>
+                    <h3 class="font-oswald text-2xl text-white mt-4 uppercase">Landing GEO-Ready</h3>
+                    <div class="mt-2 flex items-baseline gap-1">
+                        <span class="text-3xl font-bold text-white" x-text="tier === 'basic' ? '$1.5M' : '$3M'">$1.5M</span>
+                    </div>
+                    <div class="flex gap-2 mt-4">
+                        <button @click.stop="tier = 'basic'; selectedPlan = 'landing'" :class="tier === 'basic' ? 'bg-accent-cyan text-black' : 'border border-border-dim text-text-muted'" class="text-[9px] uppercase px-3 py-1 font-bold transition-all">Landing Simple</button>
+                        <button @click.stop="tier = 'pro'; selectedPlan = 'landing'" :class="tier === 'pro' ? 'bg-accent-cyan text-black' : 'border border-border-dim text-text-muted'" class="text-[9px] uppercase px-3 py-1 font-bold transition-all">Web Corporativa</button>
+                    </div>
                 </div>
-                <h3 class="font-montserrat text-xl font-bold text-white mb-2">Landing GEO-Ready</h3>
-                <p class="font-mono text-xs text-text-muted mb-6">Página de alta conversión desarrollada para motores e IAs.</p>
-                <div class="mb-6 border-b border-border-dim pb-4">
-                    <span class="font-oswald text-3xl font-bold text-white block">~$2M <span class="text-sm font-normal text-text-muted">COP</span></span>
-                    <span class="text-[10px] uppercase tracking-wider text-text-muted mt-1 block">Rango: $1.5M - $3M</span>
-                </div>
-                <ul class="space-y-4 font-mono text-xs text-text-muted flex-grow mb-8">
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Código estático hiper-rápido</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Core Web Vitals < 1 seg</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Schema Markup incluido</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Estructura de contenido RAG</li>
+                <ul class="space-y-4 font-mono text-xs text-text-muted mb-8 flex-grow">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="zap" class="w-4 h-4 text-accent-cyan mt-0.5"></i>
+                        <span x-text="tier === 'basic' ? 'Velocidad de carga garantizada (< 1s).' : 'Optimización extrema Core Web Vitals.'">Velocidad de carga garantizada (< 1s).</span>
+                    </li>
                 </ul>
-                <a href="https://wa.me/__WHATSAPP_NUMBER__" class="block text-center mt-auto border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat font-bold uppercase py-2 text-sm rounded-[2px] transition-colors">Cotizar Landing</a>
             </div>
 
-            <!-- Chatbot RAG (Selector Básico/Avanzado) -->
-            <div class="panel-ff p-6 bg-bg-panel/50 hover:bg-bg-panel transition-colors flex flex-col relative overflow-hidden group" x-data="{ chatbotType: 'avanzado' }">
-                <!-- Badge Más Solicitado -->
-                <div class="absolute top-0 right-0 bg-accent-cyan text-black font-oswald text-xs uppercase px-4 py-1 rounded-bl-[8px] font-bold">⭐ Más Solicitado</div>
-                <div class="mb-6 h-32 flex justify-center items-center">
-                    <img src="../assets/img/chatbot_icon_1775103904889.png" alt="Chatbot IA" class="h-28 object-contain drop-shadow-[0_0_15px_rgba(0,188,212,0.3)] group-hover:scale-110 transition-transform duration-500">
+            <!-- Plan 3: Chatbot RAG IA -->
+            <div @click="selectedPlan = 'chatbot'" 
+                 :class="selectedPlan === 'chatbot' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
+                <div class="mb-6">
+                    <span class="text-accent-cyan font-fira text-[10px] uppercase tracking-widest border border-accent-cyan/30 px-2 py-0.5 rounded-sm">Ventas 24/7</span>
+                    <h3 class="font-oswald text-2xl text-white mt-4 uppercase">Chatbot RAG IA</h3>
+                    <div class="mt-2 flex items-baseline gap-1">
+                        <span class="text-3xl font-bold text-white" x-text="level === 'basic' ? '$4M' : '$7M+'">$4M</span>
+                    </div>
+                    <div class="flex gap-2 mt-4">
+                        <button @click.stop="level = 'basic'; selectedPlan = 'chatbot'" :class="level === 'basic' ? 'bg-accent-cyan text-black' : 'border border-border-dim text-text-muted'" class="text-[9px] uppercase px-3 py-1 font-bold transition-all">Básico</button>
+                        <button @click.stop="level = 'pro'; selectedPlan = 'chatbot'" :class="level === 'pro' ? 'bg-accent-cyan text-black' : 'border border-border-dim text-text-muted'" class="text-[9px] uppercase px-3 py-1 font-bold transition-all">Avanzado</button>
+                    </div>
                 </div>
-                <h3 class="font-montserrat text-xl font-bold text-white mb-2 text-center">Chatbot RAG IA</h3>
-                <p class="font-mono text-xs text-text-muted mb-6 text-center">Agente conversacional IA conectado a tus datos y catálogos.</p>
-                
-                <!-- Toggle Selector -->
-                <div class="mb-6 flex bg-bg-base rounded-[2px] p-1 border border-border-dim">
-                    <button 
-                        @click="chatbotType = 'basico'"
-                        :class="chatbotType === 'basico' ? 'bg-accent-cyan text-black' : 'text-text-muted hover:text-white'"
-                        class="flex-1 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-[2px] transition-all">
-                        Básico
-                    </button>
-                    <button 
-                        @click="chatbotType = 'avanzado'"
-                        :class="chatbotType === 'avanzado' ? 'bg-accent-cyan text-black' : 'text-text-muted hover:text-white'"
-                        class="flex-1 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-[2px] transition-all">
-                        Avanzado
-                    </button>
-                </div>
-
-                <!-- Contenido Dinámico -->
-                <div x-show="chatbotType === 'basico'" x-transition.opacity class="mb-6 border-b border-border-dim pb-4">
-                    <span class="font-oswald text-3xl font-bold text-white block">~$5.5M <span class="text-sm font-normal text-text-muted">COP</span></span>
-                    <span class="text-[10px] uppercase tracking-wider text-text-muted mt-1 block">Rango: $4M - $7M</span>
-                </div>
-                <div x-show="chatbotType === 'avanzado'" x-transition.opacity class="mb-6 border-b border-border-dim pb-4">
-                    <span class="font-oswald text-3xl font-bold text-white block">~$11M <span class="text-sm font-normal text-text-muted">COP</span></span>
-                    <span class="text-[10px] uppercase tracking-wider text-text-muted mt-1 block">Rango: $7M - $15M</span>
-                </div>
-
-                <!-- Características Básico -->
-                <ul x-show="chatbotType === 'basico'" x-transition.opacity class="space-y-4 font-mono text-xs text-text-muted flex-grow mb-8">
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Entrenado con 5-10 documentos PDF/FAQs</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Integración en sitio web (widget flotante)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Anti-alucinaciones básico</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Panel de administración simple</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Soporte técnico 30 días</li>
+                <ul class="space-y-4 font-mono text-xs text-text-muted mb-8 flex-grow">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="cpu" class="w-4 h-4 text-accent-cyan mt-0.5"></i>
+                        <span x-text="level === 'basic' ? 'Entrenado con 5-10 documentos.' : 'Entrenamiento con 50+ documentos.'">Entrenado con 5-10 documentos.</span>
+                    </li>
                 </ul>
-
-                <!-- Características Avanzado -->
-                <ul x-show="chatbotType === 'avanzado'" x-transition.opacity class="space-y-4 font-mono text-xs text-text-muted flex-grow mb-8">
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Entrenado con 50+ documentos/PDFs/catálogos</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> API WhatsApp Business oficial</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Integraciones CRM/ERP (Zapier, APIs)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Múltiples canales (Web + WhatsApp + Instagram)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Analytics avanzado y reportes</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-cyan w-4 h-4 flex-shrink-0"></i> Soporte prioritario 90 días</li>
-                </ul>
-
-                <a href="https://wa.me/__WHATSAPP_NUMBER__" class="block text-center mt-auto border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat font-bold uppercase py-2 text-sm rounded-[2px] transition-colors">Cotizar Chatbot</a>
             </div>
 
-            <!-- Paquete Integral (Selector Básico/Premium) -->
-            <div class="panel-ff p-6 bg-bg-panel/50 border-accent-orange/50 hover:bg-bg-panel transition-colors flex flex-col relative overflow-hidden group" x-data="{ paqueteType: 'premium' }">
-                <!-- Badge Máximo Valor -->
-                <div class="absolute top-0 right-0 bg-accent-orange text-black font-oswald text-xs uppercase px-4 py-1 rounded-bl-[8px] font-bold">🏆 Máximo Valor</div>
-                <div class="mb-6 h-32 flex justify-center items-center">
-                    <img src="../assets/img/integral_icon_1775103921662.png" alt="Paquete Integral" class="h-28 object-contain drop-shadow-[0_0_15px_rgba(255,87,34,0.3)] group-hover:scale-110 transition-transform duration-500">
+            <!-- Plan 4: SEO Mensual -->
+            <div @click="selectedPlan = 'seo_mensual'" 
+                 :class="selectedPlan === 'seo_mensual' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
+                <div class="mb-6">
+                    <span class="text-accent-cyan font-fira text-[10px] uppercase tracking-widest border border-accent-cyan/30 px-2 py-0.5 rounded-sm">Mantenimiento</span>
+                    <h3 class="font-oswald text-2xl text-white mt-4 uppercase">Plan Mensual SEO</h3>
+                    <div class="mt-2 flex items-baseline gap-1">
+                        <span class="text-3xl font-bold text-white">$1.5M</span>
+                        <span class="text-text-muted text-xs font-mono uppercase">/ mes</span>
+                    </div>
                 </div>
-                <h3 class="font-montserrat text-xl font-bold text-white mb-2 text-center">Paquete Integral</h3>
-                <p class="font-mono text-xs text-text-muted mb-6 text-center">El ecosistema completo. Landing, SEO, GEO y Chatbot.</p>
-                
-                <!-- Toggle Selector -->
-                <div class="mb-6 flex bg-bg-base rounded-[2px] p-1 border border-border-dim">
-                    <button 
-                        @click="paqueteType = 'basico'"
-                        :class="paqueteType === 'basico' ? 'bg-accent-orange text-black' : 'text-text-muted hover:text-white'"
-                        class="flex-1 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-[2px] transition-all">
-                        Básico
-                    </button>
-                    <button 
-                        @click="paqueteType = 'premium'"
-                        :class="paqueteType === 'premium' ? 'bg-accent-orange text-black' : 'text-text-muted hover:text-white'"
-                        class="flex-1 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-[2px] transition-all">
-                        Premium
-                    </button>
-                </div>
-
-                <!-- Contenido Dinámico -->
-                <div x-show="paqueteType === 'basico'" x-transition.opacity class="mb-6 border-b border-border-dim pb-4">
-                    <span class="font-oswald text-3xl font-bold text-white block">~$8M <span class="text-sm font-normal text-text-muted">COP</span></span>
-                    <span class="text-[10px] uppercase tracking-wider text-text-muted mt-1 block">Rango: $6M - $10M</span>
-                </div>
-                <div x-show="paqueteType === 'premium'" x-transition.opacity class="mb-6 border-b border-border-dim pb-4">
-                    <span class="font-oswald text-3xl font-bold text-white block">~$14M <span class="text-sm font-normal text-text-muted">COP</span></span>
-                    <span class="text-[10px] uppercase tracking-wider text-text-muted mt-1 block">Rango: $10M - $18M</span>
-                </div>
-
-                <!-- Características Básico -->
-                <ul x-show="paqueteType === 'basico'" x-transition.opacity class="space-y-4 font-mono text-xs text-text-muted flex-grow mb-8">
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Landing Page Insuperable (100/100 Core Web Vitals)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Chatbot RAG Básico (5-10 documentos, web)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Indexación en Google Maps (GBP optimizado)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Perfiles listos para LLMs (GEO básico)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Schema Markup + Analytics configurado</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Soporte técnico 30 días</li>
+                <ul class="space-y-4 font-mono text-xs text-text-muted mb-8 flex-grow">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="trending-up" class="w-4 h-4 text-accent-cyan mt-0.5"></i>
+                        <span>Indexación y contenido recurrente.</span>
+                    </li>
                 </ul>
-
-                <!-- Características Premium -->
-                <ul x-show="paqueteType === 'premium'" x-transition.opacity class="space-y-4 font-mono text-xs text-text-muted flex-grow mb-8">
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Landing Page Insuperable (100/100 Core Web Vitals)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Chatbot RAG Avanzado (50+ docs, WhatsApp, CRM)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Indexación en Google Maps (GBP optimizado)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Perfiles listos para LLMs (GEO avanzado)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Schema Markup + Analytics configurado</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Integraciones multi-canal (Zapier, APIs)</li>
-                    <li class="flex gap-2"><i data-lucide="check" class="text-accent-orange w-4 h-4 flex-shrink-0"></i> Soporte prioritario 90 días</li>
-                </ul>
-
-                <a href="https://wa.me/__WHATSAPP_NUMBER__" class="block text-center mt-auto border border-accent-orange text-accent-orange hover:bg-accent-orange hover:text-black font-montserrat font-bold uppercase py-2 text-sm rounded-[2px] transition-colors">Implementar Todo</a>
             </div>
 
+            <!-- Plan 5: Combo Duo (Pre-seleccionado) -->
+            <div @click="selectedPlan = 'seo_geo_duo'" 
+                 :class="selectedPlan === 'seo_geo_duo' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.4)]' : 'border-accent-cyan/10'"
+                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-500 relative group border">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent-cyan text-black text-[10px] font-bold uppercase px-3 py-1 rounded-full z-10 shadow-lg" x-show="selectedPlan === 'seo_geo_duo'">Seleccionado</div>
+                <div class="mb-6">
+                    <span class="text-accent-cyan font-fira text-[10px] uppercase tracking-widest">Recomendado</span>
+                    <h3 class="font-oswald text-2xl text-white mt-4 uppercase">Combo Duo SEO+GEO</h3>
+                    <div class="mt-2 flex items-baseline gap-1">
+                        <span class="text-3xl font-bold text-white">$2.5M</span>
+                        <span class="text-text-muted text-xs font-mono uppercase">/ mes</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 font-mono text-xs text-text-muted mb-8 flex-grow">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-accent-cyan mt-0.5"></i>
+                        <span class="text-white">Lo mejor de ambos mundos: Google + IAs.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Plan 6: Paquete Integral -->
+            <div @click="selectedPlan = 'integral'" 
+                 :class="selectedPlan === 'integral' ? 'border-accent-orange shadow-[0_0_15px_rgba(255,87,34,0.2)]' : 'border-transparent'"
+                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
+                <div class="mb-6">
+                    <span class="text-accent-orange font-fira text-[10px] uppercase tracking-widest border border-accent-orange/30 px-2 py-0.5 rounded-sm">All-In-One</span>
+                    <h3 class="font-oswald text-2xl text-white mt-4 uppercase">Paquete Integral</h3>
+                    <div class="mt-2 flex items-baseline gap-1">
+                        <span class="text-xs text-text-muted font-mono">Desde</span>
+                        <span class="text-3xl font-bold text-white">$10M</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 font-mono text-xs text-text-muted mb-8 flex-grow">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="crown" class="w-4 h-4 text-accent-orange mt-0.5"></i>
+                        <span class="text-white">Estrategia 360 para dominar tu sector.</span>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <!-- PLANES DE RETENCIÓN -->
-        <h2 class="font-oswald text-2xl uppercase text-white mb-8 border-b border-border-dim pb-2 inline-block">Planes de Ingeniería Mensual</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-            
-            <!-- SEO Mensual -->
-            <div class="panel-ff p-8 bg-bg-panel/50 hover:bg-bg-panel transition-colors flex flex-col relative overflow-hidden group">
-                <div class="flex flex-col md:flex-row gap-6">
-                    <div class="w-full md:w-32 flex-shrink-0 flex justify-center items-center h-32">
-                        <img src="../assets/img/seo_geo_icon_1775103736898.png" alt="SEO y GEO Mensual" class="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 drop-shadow-md">
-                    </div>
-                    <div>
-                        <h3 class="font-montserrat text-2xl font-bold text-white mb-2">SEO o GEO Mensual</h3>
-                        <p class="font-mono text-sm text-text-muted mb-4">Optimización constante de infraestructura técnica, publicación de artículos estructurados y seguimiento de ranking técnico en Google Maps / ChatGPT.</p>
-                        <span class="font-oswald text-2xl font-bold text-accent-cyan block mb-4">$1.5M - $3M COP<span class="text-xs font-normal font-mono text-text-muted"> / mes</span></span>
-                        <a href="https://wa.me/__WHATSAPP_NUMBER__" class="inline-flex items-center gap-2 border border-border-dim text-white hover:border-accent-cyan hover:text-accent-cyan font-montserrat font-bold uppercase py-2 px-6 rounded-[2px] transition-colors text-xs">
-                            Suscribir plan
-                        </a>
-                    </div>
-                </div>
+        <!-- Master Action Button -->
+        <div class="max-w-md mx-auto text-center animate-fade-in mt-12 bg-bg-panel/50 p-6 border border-border-dim rounded-[2px] shadow-2xl">
+            <p class="text-[10px] uppercase tracking-[0.2em] text-text-muted mb-4">Plan seleccionado:</p>
+            <div class="font-oswald text-xl text-white mb-6 uppercase tracking-wider border-b border-accent-cyan/20 pb-4">
+                <span x-text="selectedPlan.replace('_', ' ').replace('duo', 'Duo').toUpperCase()"></span>
             </div>
-
-            <!-- Combo SEO+GEO -->
-            <div class="panel-ff p-8 bg-gradient-to-br from-bg-panel to-bg-base border-accent-cyan/40 hover:border-accent-cyan transition-all flex flex-col relative overflow-hidden group">
-                <div class="absolute inset-0 bg-accent-glow opacity-0 group-hover:opacity-20 transition-opacity"></div>
-                <!-- Badge Popular -->
-                <div class="absolute top-0 right-0 bg-accent-cyan text-black font-oswald text-xs uppercase px-4 py-1 rounded-bl-[8px] font-bold">⭐ Más Popular</div>
-                
-                <div class="flex flex-col md:flex-row gap-6 relative z-10">
-                    <div class="w-full md:w-32 flex-shrink-0 flex justify-center items-center h-32">
-                        <img src="../assets/img/combo_icon_1775103951793.png" alt="Combo SEO + GEO" class="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(0,188,212,0.6)] group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div>
-                        <h3 class="font-montserrat text-2xl font-bold text-white mb-2">Combo SEO + GEO</h3>
-                        <p class="font-mono text-sm text-text-muted mb-4">La estrategia definitiva. Combinamos el seguimiento de rankeo tradicional con posicionamiento agresivo en ChatGPT, Gemini y Perplexity.</p>
-                        <span class="font-oswald text-2xl font-bold text-accent-cyan block mb-4">$2.5M - $4.5M COP<span class="text-xs font-normal font-mono text-text-muted"> / mes</span></span>
-                        <a href="https://wa.me/__WHATSAPP_NUMBER__" class="inline-flex items-center gap-2 bg-accent-cyan text-black hover:bg-accent-orange font-montserrat font-bold uppercase py-2 px-6 rounded-[2px] transition-colors text-xs">
-                            Adquirir Combo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+            <a :href="whatsappLink" 
+               target="_blank"
+               class="block w-full py-5 bg-accent-cyan text-black font-oswald text-lg font-bold uppercase tracking-widest hover:bg-accent-orange transition-all shadow-[0_0_30px_rgba(0,188,212,0.3)] flex items-center justify-center gap-3">
+               <span x-html="buttonText"></span>
+               <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <p class="mt-4 text-[9px] text-text-muted uppercase">Click para iniciar conversaci&oacute;n con Oscar Alfonso.</p>
         </div>
 
-        <div class="mt-20 font-mono text-[10px] text-text-muted text-center max-w-2xl mx-auto border-t border-border-dim pt-8 opacity-70">
-            * Nota de transparencia: Todos los precios están expresados en Pesos Colombianos (COP) y son indicativos del rango histórico. Todo proyecto requiere una fase inicial de diagnóstico antes de definir un fee final. No hay contratos a 12 meses forzados.
-        </div>
-
+        <!-- FAQ Corto -->
+        <section class="max-w-3xl mx-auto border-t border-border-dim pt-16 mb-20">
+            <h2 class="font-oswald text-3xl text-white uppercase text-center mb-10">Dudas r&aacute;pidas</h2>
+            <div class="space-y-6">
+                <div>
+                    <h4 class="text-accent-cyan font-bold mb-2">¿Por qu&eacute; el Combo?</h4>
+                    <p class="text-text-muted text-sm italic">Porque hoy la gente no solo busca en Google. Preguntan a ChatGPT. Si solo haces SEO, pierdes la mitad del mercado.</p>
+                </div>
+                <div>
+                    <h4 class="text-accent-cyan font-bold mb-2">¿Tengo compromiso de permanencia?</h4>
+                    <p class="text-text-muted text-sm italic">No. Los planes mensuales se pueden cancelar en cualquier momento. Mi trabajo es darte resultados para que quieras quedarte.</p>
+                </div>
+            </div>
+        </section>
     </main>
-
-        <!-- ===================== FOOTER ======================== -->
     <footer class="pt-12 pb-8 border-t border-border-dim bg-bg-panel flex flex-col relative z-20">
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <!-- Branding & NAP (SEO Local) -->
                 <div>
                     <h2 class="text-white font-oswald text-2xl uppercase tracking-widest mb-4">
-                        Inge Fonsi - Consultoría SEO e IA
+                        Inge Fonsi - Consultor&iacute;a SEO e IA
                     </h2>
                     <ul class="font-mono text-sm text-text-muted space-y-2">
                         <li class="flex items-center gap-2">
                             <i data-lucide="map-pin" class="w-4 h-4 text-accent-cyan"></i>
-                            Bogotá, Colombia
+                            Bogot&aacute;, Colombia
                         </li>
                         <li class="flex items-center gap-2">
                             <i data-lucide="phone" class="w-4 h-4 text-accent-cyan"></i>
@@ -470,27 +454,27 @@
                     </h3>
                     <ul class="font-mono text-sm text-text-muted space-y-3">
                         <li>
-                            <a href="/servicios/seo-tecnico-bogota" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
+                            <a href="../servicios/seo-geo-ingenieria/index.html" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
                                 <i data-lucide="chevron-right" class="w-3 h-3 text-accent-cyan"></i>
-                                SEO Técnico
+                                Ingenier&iacute;a SEO + GEO
                             </a>
                         </li>
                         <li>
-                            <a href="/servicios/chatbot-ia-negocio" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
+                            <a href="../servicios/agente-ia-whatsapp/index.html" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
                                 <i data-lucide="chevron-right" class="w-3 h-3 text-accent-cyan"></i>
-                                Chatbots de IA (RAG)
+                                Agente IA WhatsApp
                             </a>
                         </li>
                         <li>
-                            <a href="/servicios/geo-visibilidad-ia" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
+                            <a href="../servicios/chatbot-ia-empresarial/index.html" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
                                 <i data-lucide="chevron-right" class="w-3 h-3 text-accent-cyan"></i>
-                                GEO (Visibilidad IA)
+                                Chatbots Especializados
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Optimización IAs (GEO) & Socials -->
+                <!-- Optimizaci&oacute;n IAs (GEO) & Socials -->
                 <div>
                     <h3 class="text-white font-oswald text-lg uppercase tracking-wider mb-4 border-b border-border-dim pb-2 inline-block">
                         Redes Profesionales
@@ -510,7 +494,7 @@
                         </a>
                     </div>
                     <p class="font-mono text-[10px] text-text-muted uppercase leading-relaxed">
-                        Perfiles validados para señales de identidad en motores de búsqueda generativa.
+                        Perfiles validados para se&ntilde;ales de identidad en motores de b&uacute;squeda generativa.
                     </p>
                 </div>
             </div>
@@ -518,11 +502,11 @@
             <!-- Bottom Bar -->
             <div class="border-t border-border-dim pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
                 <div class="font-mono text-[10px] text-text-muted uppercase text-center md:text-left">
-                    © 2026 Oscar Alfonso Ochoa Caballero. Todos los derechos reservados.<br>
+                    &copy; 2026 Oscar Alfonso Ochoa Caballero. Todos los derechos reservados.<br>
                     Hecho con ingenio. Mejorado con experiencia.
                 </div>
                 <div class="font-mono text-[10px] uppercase">
-                    <a href="/sitemap.xml" class="text-text-muted hover:text-accent-cyan transition-colors flex items-center gap-1">
+                    <a href="../sitemap.xml" class="text-text-muted hover:text-accent-cyan transition-colors flex items-center gap-1">
                         <i data-lucide="map" class="w-3 h-3"></i> Sitemap XML
                     </a>
                 </div>
@@ -530,6 +514,8 @@
         </div>
     </footer>
 
+        <!-- WhatsApp Floating Button -->
+        <!-- WhatsApp Floating Button -->
         <!-- WhatsApp Floating Button -->
         <!-- WhatsApp Floating Button -->
         <!-- WhatsApp Floating Button -->
@@ -544,6 +530,10 @@
              <div class="bg-bg-panel text-white text-[10px] font-mono uppercase px-3 py-2 rounded-[2px] border border-accent-cyan/30 shadow-[0_0_15px_rgba(0,0,0,0.5)] whitespace-nowrap tracking-widest animate-float-x whatsapp-bubble">
                 &iexcl;Hablemos de tu proyecto!
             </div>
+        </div>
+    </div>
+        </div>
+    </div>
         </div>
     </div>
         </div>

@@ -22,11 +22,12 @@ $navTemplate = @"
                     </a>
                     <div x-show="dropdownOpen" x-transition x-cloak class="absolute top-full left-0 mt-4 w-56 bg-bg-panel border border-border-dim shadow-xl rounded-[2px] py-2 z-50">
                         <div class="absolute -top-4 left-0 w-full h-4"></div>
-                        <a href="{P}servicios/geo-visibilidad-ia/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">GEO Visibilidad IA</a>
-                        <a href="{P}servicios/seo-tecnico-bogota/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">SEO T&eacute;cnico</a>
-                        <a href="{P}servicios/chatbot-ia-negocio/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Chatbot IA (RAG)</a>
-                        <a href="{P}servicios/landing-pages-bogota/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Landing Pages</a>
-                        <a href="{P}servicios/auditoria-geo-seo/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Auditor&iacute;a SEO + GEO</a>
+                        <a href="{P}servicios/seo-geo-ingenieria/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Ingenier&iacute;a SEO + GEO</a>
+                        <a href="{P}servicios/agente-ia-whatsapp/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Agente IA WhatsApp</a>
+                        <a href="{P}servicios/chatbot-ia-empresarial/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Chatbots Especializados</a>
+                        <a href="{P}servicios/desarrollo-web-bogota/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Desarrollo Web Pro</a>
+                        <a href="{P}servicios/workshops-ia-equipos/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Workshops IA</a>
+                        <a href="{P}servicios/consultoria-auditoria-ia/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Auditor&iacute;as 1a1</a>
                     </div>
                 </div>
 
@@ -53,11 +54,12 @@ $navTemplate = @"
                         <button class="p-1"><i data-lucide="chevron-down" class="w-4 h-4 transition-transform" :class="servOpen ? 'rotate-180' : ''"></i></button>
                     </div>
                     <div x-show="servOpen" x-transition x-cloak class="pl-7 flex flex-col gap-4 border-l border-border-dim ml-2 mt-4 text-xs">
-                        <a href="{P}servicios/geo-visibilidad-ia/index.html" class="text-text-muted hover:text-accent-cyan">GEO Visibilidad IA</a>
-                        <a href="{P}servicios/seo-tecnico-bogota/index.html" class="text-text-muted hover:text-accent-cyan">SEO T&eacute;cnico</a>
-                        <a href="{P}servicios/chatbot-ia-negocio/index.html" class="text-text-muted hover:text-accent-cyan">Chatbot IA (RAG)</a>
-                        <a href="{P}servicios/landing-pages-bogota/index.html" class="text-text-muted hover:text-accent-cyan">Landing Pages</a>
-                        <a href="{P}servicios/auditoria-geo-seo/index.html" class="text-text-muted hover:text-accent-cyan">Auditor&iacute;a SEO + GEO</a>
+                        <a href="{P}servicios/seo-geo-ingenieria/index.html" class="text-text-muted hover:text-accent-cyan">Ingenier&iacute;a SEO + GEO</a>
+                        <a href="{P}servicios/agente-ia-whatsapp/index.html" class="text-text-muted hover:text-accent-cyan">Agente IA WhatsApp</a>
+                        <a href="{P}servicios/chatbot-ia-empresarial/index.html" class="text-text-muted hover:text-accent-cyan">Chatbots Especializados</a>
+                        <a href="{P}servicios/desarrollo-web-bogota/index.html" class="text-text-muted hover:text-accent-cyan">Desarrollo Web Pro</a>
+                        <a href="{P}servicios/workshops-ia-equipos/index.html" class="text-text-muted hover:text-accent-cyan">Workshops IA</a>
+                        <a href="{P}servicios/consultoria-auditoria-ia/index.html" class="text-text-muted hover:text-accent-cyan">Auditor&iacute;as 1a1</a>
                     </div>
                 </div>
 
@@ -89,17 +91,18 @@ $whatsappTemplate = @"
 $files = @(
     "index.html",
     "servicios/index.html",
-    "servicios/geo-visibilidad-ia/index.html",
-    "servicios/seo-tecnico-bogota/index.html",
-    "servicios/chatbot-ia-negocio/index.html",
-    "servicios/landing-pages-bogota/index.html",
-    "servicios/auditoria-geo-seo/index.html",
+    "servicios/seo-geo-ingenieria/index.html",
+    "servicios/agente-ia-whatsapp/index.html",
+    "servicios/chatbot-ia-empresarial/index.html",
+    "servicios/desarrollo-web-bogota/index.html",
+    "servicios/workshops-ia-equipos/index.html",
+    "servicios/consultoria-auditoria-ia/index.html",
     "precios/index.html",
     "casos/index.html",
     "casos/coordinadora/index.html"
 )
 
-# Corruption Mapping
+# Corruption Mapping (for maintenance)
 $replacements = @{
     "Ã©" = "é"
     "Ã­" = "í"
@@ -130,27 +133,24 @@ foreach ($filePath in $files) {
         # Replacement for <nav>
         $content = [regex]::Replace($content, "(?s)<nav.*?</nav>", $customNav)
 
-        # Replacement for WhatsApp button (More robust)
-        # Search for any fixed bottom-right or bottom-left div containing wa.me
+        # Replacement for WhatsApp button
         $waFixedRegex = "(?s)<div[^>]*fixed[^>]*>(?:(?!</div>).)*?wa\.me.*?</div>"
         if ($content -match $waFixedRegex) {
              $content = [regex]::Replace($content, $waFixedRegex, $whatsappTemplate)
         } else {
-             # If no FIXED button is found, inject it before </body> 
-             # (even if there are other wa.me links in the content)
              if ($content -match "</body>") {
                 $content = $content.Replace("</body>", "`n    $whatsappTemplate`n</body>")
              }
         }
 
-        # Sanitization of corrupted characters
+        # Sanitization
         foreach ($key in $replacements.Keys) {
             $value = $replacements[$key]
             $content = $content.Replace($key, $value)
         }
 
         [System.IO.File]::WriteAllText($fullPath, $content, $utf8NoBom)
-        Write-Host "Sanitized & Updated: $filePath" -ForegroundColor Green
+        Write-Host "Updated Nav & Robustness: $filePath" -ForegroundColor Green
     } else {
         Write-Host "File not found: $filePath" -ForegroundColor Red
     }

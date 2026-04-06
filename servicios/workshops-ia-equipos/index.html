@@ -10,16 +10,27 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caso de Éxito: Chatbot IA para Coordinadora | Inge Fonsi</title>
-    <link rel="canonical" href="https://ingefonsi.vercel.app/casos/coordinadora/">
+    <title>Usa la IA para Trabajar Menos | Workshops IA Bogotá | Inge Fonsi</title>
+    <link rel="canonical" href="https://ingefonsi.vercel.app/servicios/workshops-ia-equipos/">
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
     
-    <meta name="description" content="Descubre cómo el sistema de chatbot de inteligencia artificial optimizó la atención al cliente de la transportadora logística Coordinadora en Colombia.">
-    <meta name="author" content="Oscar Alfonso Ochoa Caballero">
-
-    <meta property="og:title" content="Caso de Éxito: Chatbot IA para Coordinadora | Inge Fonsi">
-    <meta property="og:description" content="Descubre cómo el sistema de chatbot de inteligencia artificial optimizó la atención al cliente de la transportadora logística Coordinadora en Colombia.">
+    <meta name="description" content="Capacita a tu equipo para rendir más usando Inteligencia Artificial. Talleres prácticos con herramientas reales para ahorrar tiempo hoy.">
+    
+    <meta property="og:title" content="Workshops IA para Equipos | Capacitación Práctica en Bogotá">
+    <meta property="og:description" content="Capacita a tu equipo para rendir más usando Inteligencia Artificial. Talleres prácticos con herramientas reales para ahorrar tiempo hoy.">
     <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ingefonsi.vercel.app/servicios/workshops-ia-equipos/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Workshops IA",
+      "provider": { "@type": "LocalBusiness", "name": "Inge Fonsi" },
+      "areaServed": "Bogotá, Colombia",
+      "description": "Capacitación práctica en Inteligencia Artificial Generativa para equipos de trabajo."
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -48,17 +59,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <style>
+        /* HUD Date Picker Styling */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1) sepia(100%) saturate(500%) hue-rotate(170deg);
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator:hover {
+            opacity: 1;
+        }
+        /* hCaptcha spacing */
+        .h-captcha {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
 
-        <!-- ===================== TOP NAVIGATION ===================== -->
-        <!-- ===================== TOP NAVIGATION ===================== -->
-        <!-- ===================== TOP NAVIGATION ===================== -->
-        <!-- ===================== TOP NAVIGATION ===================== -->
-        <!-- ===================== TOP NAVIGATION ===================== -->
-        <!-- ===================== TOP NAVIGATION ===================== -->
-        <!-- ===================== TOP NAVIGATION ===================== -->
         <!-- ===================== TOP NAVIGATION ===================== -->
     <nav x-data="{ open: false }" class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md fixed top-0 z-50 transition-all duration-300">
         <div class="absolute bottom-0 left-0 w-full h-[2px] bg-transparent pointer-events-none">
@@ -130,90 +153,147 @@
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-6 py-20 min-h-screen">
+    <main class="max-w-4xl mx-auto px-6 py-24 min-h-screen">
         
-        <header class="mb-16">
-            <div class="flex items-center gap-4 mb-6">
-                <span class="section-label"> — INTELIGENCIA ARTIFICIAL EN LOGÍSTICA</span>
-            </div>
-            <h1 class="font-oswald text-4xl md:text-6xl font-bold uppercase tracking-wider text-white mb-6">El Caso Coordinadora: Automatización de Rastreo en WhatsApp</h1>
-            
-            <div class="flex items-center gap-6 mt-8 border-y border-border-dim py-4">
-                <div class="flex flex-col">
-                    <span class="text-[10px] uppercase text-text-muted">Cliente</span>
-                    <span class="font-montserrat font-bold">Transportadora Coordinadora</span>
-                </div>
-                <div class="w-px h-8 bg-border-dim"></div>
-                <div class="flex flex-col">
-                    <span class="text-[10px] uppercase text-text-muted">Servicio</span>
-                    <span class="font-montserrat font-bold text-accent-cyan">Chatbot IA (RAG)</span>
-                </div>
-                <div class="w-px h-8 bg-border-dim"></div>
-                <div class="flex flex-col hidden sm:flex">
-                    <span class="text-[10px] uppercase text-text-muted">Impacto</span>
-                    <span class="font-montserrat font-bold text-accent-orange">-70% en tickets humanos</span>
-                </div>
-            </div>
+        <header class="mb-16 text-center">
+            <span class="section-label mb-4 block"> — LIVE ONLINE LEARNING</span>
+            <h1 class="font-oswald text-4xl md:text-6xl font-bold uppercase tracking-wider text-white mb-6">
+                Workshops IA <span class="text-accent-cyan">Online Sincr&oacute;nicos</span>
+            </h1>
+            <p class="font-mono text-text-muted text-lg max-w-2xl mx-auto italic">
+                Aprende a usar la Inteligencia Artificial en vivo. Sesiones pr&aacute;cticas para personas y equipos que quieren dejar de perder tiempo en tareas repetitivas.
+            </p>
         </header>
 
-        <article class="prose prose-invert prose-p:font-mono prose-p:text-text-muted prose-p:leading-relaxed prose-h2:font-oswald prose-h2:uppercase prose-h2:text-3xl max-w-none">
+        <section class="panel-ff p-8 relative overflow-hidden mb-16 border-accent-orange/30">
+            <h2 class="font-oswald text-2xl uppercase text-white mb-8 border-b border-border-dim pb-4 italic text-accent-orange tracking-widest">Currículo de Ingeniería</h2>
             
-            <h2>El Problema</h2>
-            <p>
-                Coordinadora Mercantil maneja miles de guías logísticas diarias a nivel nacional. La fricción número uno en su canal de atención era la consulta recurrente: <em>"¿Dónde está mi paquete?"</em>. Los usuarios tenían que ir al sitio web, buscar el apartado de rastreo e ingresar el número de guía manualmente. Mientras tanto, el canal de WhatsApp estaba saturado repitiendo el mismo proceso manualmente para quienes no lo lograban en la página.
-            </p>
-
-            <div class="panel-ff p-6 my-10 bg-accent-glow/5 border-l-4 border-l-accent-cyan">
-                <p class="font-bold text-white mb-0 mt-0 italic">"Necesitamos que el usuario pregunte por su paquete en WhatsApp con lenguaje natural, y que el bot extraiga la guía de la base de datos sin fricción."</p>
-            </div>
-
-            <h2>La Solución RAG</h2>
-            <p>
-                Desarrollamos una integración de <strong>IA Conversacional (RAG)</strong> directamente en WhatsApp Business API.
-            </p>
-            <ul>
-                <li>El asistente detecta la intención del usuario.</li>
-                <li>Identifica si el usuario provee un número de guía de 11 dígitos, o solicita el dato asociado a su número telefónico.</li>
-                <li>Se conecta vía API Restful segura a los servidores de Coordinadora.</li>
-                <li>Devuelve el estado de la guía formateado amigablemente.</li>
-            </ul>
-
-            <img src="../../assets/img/coordinadora_demo.jpg" alt="Demostración del Chatbot de Coordinadora en WhatsApp" class="w-full h-auto my-10 border border-border-dim rounded-[2px]" onerror="this.src='https://placehold.co/800x400/13151f/00bcd4?text=Demo+Chatbot+Coordinadora&font=oswald'">
-
-            <h2>Los Resultados</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 my-8">
-                <div class="bg-bg-panel p-6 border border-border-dim text-center">
-                    <span class="font-oswald text-4xl text-accent-cyan block mb-2">-70%</span>
-                    <span class="font-mono text-xs text-text-muted">Tickets de rastreo manual</span>
+            <div class="space-y-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="group">
+                        <h4 class="font-bold text-white uppercase text-xs mb-3 italic tracking-widest bg-accent-orange/10 inline-block px-2 py-1">Semana 1: Prompt Engineering Máster</h4>
+                        <p class="text-text-muted text-xs leading-relaxed font-mono">Diseño de instrucciones estructuradas, técnicas de Few-Shot, Chain-of-Thought y marcos de trabajo corporativos para reducir errores de la IA al 1%.</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-bold text-white uppercase text-xs mb-3 italic tracking-widest bg-accent-cyan/10 inline-block px-2 py-1">Semana 2: Automatización de Flujos</h4>
+                        <p class="text-text-muted text-xs leading-relaxed font-mono">Uso de Make.com y Zapier para conectar herramientas de IA con correos, hojas de cálculo y CRMs. Creación de asistentes autónomos.</p>
+                    </div>
                 </div>
-                <div class="bg-bg-panel p-6 border border-border-dim text-center">
-                    <span class="font-oswald text-4xl text-accent-cyan block mb-2">24/7</span>
-                    <span class="font-mono text-xs text-text-muted">Operación sin descanso</span>
-                </div>
-                <div class="bg-bg-panel p-6 border border-border-dim text-center">
-                    <span class="font-oswald text-4xl text-accent-orange block mb-2">< 2s</span>
-                    <span class="font-mono text-xs text-text-muted">Tiempo de respuesta</span>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 border-t border-border-dim pt-10">
+                    <div class="group">
+                        <h4 class="font-bold text-white uppercase text-xs mb-3 italic tracking-widest bg-accent-cyan/10 inline-block px-2 py-1">Semana 3: IA para Gestión Logística</h4>
+                        <p class="text-text-muted text-xs leading-relaxed font-mono">Enfoque en casos reales de logística y B2B: Procesamiento de guías, clasificación automática de tickets y resumen de auditorías.</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-bold text-white uppercase text-xs mb-3 italic tracking-widest bg-accent-orange/10 inline-block px-2 py-1">Semana 4: Auditoría de Seguridad</h4>
+                        <p class="text-text-muted text-xs leading-relaxed font-mono">Políticas de uso seguro de la IA, protección de datos sensibles y cumplimiento ético en el uso corporativo de modelos externos.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <h2>Tecnología Utilizada</h2>
-            <p>
-                Meta WhatsApp Cloud API, OpenAI (estructuración de lenguaje natural), arquitectura Serverless y bases de datos NoSQL temporales para caching de intenciones.
-            </p>
+        <section class="max-w-2xl mx-auto mb-16">
+            <div class="panel-ff p-8 border-accent-cyan/30">
+                <h3 class="font-oswald text-2xl uppercase text-white mb-8 italic tracking-widest text-center">Reserva tu Sesi&oacute;n</h3>
+                
+                <form x-data="{ sending: false, sent: false }" @submit.prevent="
+                      sending = true;
+                      const formData = new FormData($el);
+                      const data = Object.fromEntries(formData);
+                      fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                      })
+                      .then(r => r.json())
+                      .then(r => {
+                        sending = false;
+                        if (r.success) {
+                          sent = true;
+                          $el.reset();
+                        } else {
+                          alert('Error al enviar. Intenta por WhatsApp.');
+                        }
+                      })
+                      .catch(() => {
+                        sending = false;
+                        alert('Error de conexi&oacute;n. Intenta por WhatsApp.');
+                      })
+                    " class="space-y-6 font-mono text-xs uppercase tracking-widest">
+                    
+                    <!-- Web3Forms Config -->
+                    <input type="hidden" name="access_key" value="__WEB3FORMS_KEY__">
+                    <input type="hidden" name="subject" value="Nueva Solicitud de Workshop IA">
+                    <input type="hidden" name="from_name" value="Inge Fonsi - Workshops">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
-        </article>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-text-muted block">Nombre Completo</label>
+                            <input type="text" name="name" required class="w-full bg-bg-base border border-border-dim p-3 text-white focus:border-accent-cyan outline-none transition-colors rounded-[2px]" placeholder="Ej: Juan Perez">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-text-muted block">WhatsApp de Contacto</label>
+                            <input type="tel" name="whatsapp" required class="w-full bg-bg-base border border-border-dim p-3 text-white focus:border-accent-cyan outline-none transition-colors rounded-[2px]" placeholder="Ej: +57 300...">
+                        </div>
+                    </div>
 
-        <div class="text-center mt-20 bg-bg-panel p-8 md:p-12 border border-accent-cyan/30 rounded-[2px]">
-            <h3 class="font-oswald text-2xl uppercase text-white mb-4">¿Tu empresa tiene un cuello de botella logístico?</h3>
-            <p class="font-mono text-sm text-text-muted mb-8 max-w-lg mx-auto">Una IA conectada a tu base de datos puede resolver el 80% de las consultas de Nivel 1.</p>
-            <a href="https://wa.me/__WHATSAPP_NUMBER__?text=Hola,%20quisiera%20cotizar%20un%20chatbot%20IA%20similar%20al%20de%20coordinadora." target="_blank" class="inline-flex items-center gap-2 bg-accent-cyan text-black hover:bg-accent-orange font-montserrat uppercase font-bold py-3 px-8 rounded-[2px] transition-colors">
-                <i data-lucide="bot" class="w-5 h-5"></i> Cotizar Sistema Similar
-            </a>
-        </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-text-muted block">N&uacute;mero de Personas</label>
+                            <select name="team_size" class="w-full bg-bg-base border border-border-dim p-3 text-white focus:border-accent-cyan outline-none transition-colors rounded-[2px]">
+                                <option>1 Persona (Individual)</option>
+                                <option>2-5 Personas (Equipo Peque&ntilde;o)</option>
+                                <option>6-15 Personas (Equipo Corporativo)</option>
+                                <option>+15 Personas</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-text-muted block">Tem&aacute;tica de Inter&eacute;s</label>
+                            <select name="topic" class="w-full bg-bg-base border border-border-dim p-3 text-white focus:border-accent-cyan outline-none transition-colors rounded-[2px]">
+                                <option>Productividad General (Prompting)</option>
+                                <option>IA para Marketing y Ventas</option>
+                                <option>IA para Operaciones y Log&iacute;stica</option>
+                                <option>Automatizaci&oacute;n con Make/Zapier</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-text-muted block">Fecha de Inicio Sugerida</label>
+                            <input type="date" name="preferred_date" id="workshop_date" required class="w-full bg-bg-base border border-border-dim p-3 text-white focus:border-accent-cyan outline-none transition-colors rounded-[2px] custom-date-picker">
+                        </div>
+                        <div class="space-y-2 flex flex-col justify-end">
+                             <p class="text-[9px] text-text-muted leading-tight">Selecciona una fecha tentativa para coordinar la agenda.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-text-muted block">Comentarios adicionales</label>
+                        <textarea name="problem" rows="4" required class="w-full bg-bg-base border border-border-dim p-3 text-white focus:border-accent-cyan outline-none transition-colors rounded-[2px] resize-none" placeholder="Ej: Mi equipo usa ChatGPT pero no sabemos como automatizar el reporte de ventas..."></textarea>
+                    
+                    <!-- hCaptcha -->
+                    <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001" data-theme="dark"></div>
+
+                    <button x-show="!sent" type="submit" class="w-full bg-accent-cyan text-black font-montserrat font-bold py-5 hover:bg-accent-orange transition-all uppercase shadow-[0_0_30px_rgba(0,188,212,0.3)] text-base flex items-center justify-center gap-2" :class="{ 'opacity-70 cursor-wait': sending }">
+                        <span x-show="!sending">Solicitar Cotizaci&oacute;n Live Workshop</span>
+                        <span x-show="sending">Procesando solicitud...</span>
+                        <i x-show="!sending" data-lucide="send" class="w-4 h-4"></i>
+                    </button>
+
+                    <div x-show="sent" x-cloak class="w-full bg-accent-cyan/10 border border-accent-cyan text-accent-cyan font-bold py-4 text-center uppercase tracking-widest flex items-center justify-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5"></i> Solicitud Recibida
+                    </div>
+                    <p x-show="!sent" class="text-[8px] text-center text-text-muted">Recibir&aacute;s una respuesta v&iacute;a WhatsApp en menos de 24 horas.</p>
+                </form>
+            </div>
+        </section>
+            </div>
+        </section>
 
     </main>
 
-        <!-- ===================== FOOTER ======================== -->
         <!-- ===================== FOOTER ======================== -->
         <!-- ===================== FOOTER ======================== -->
     <footer class="pt-12 pb-8 border-t border-border-dim bg-bg-panel flex flex-col relative z-20">
@@ -307,16 +387,9 @@
         </div>
     </footer>
 
-    <script src="../../assets/js/main.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-
-        <!-- WhatsApp Floating Button -->
-        <!-- WhatsApp Floating Button -->
         <!-- WhatsApp Floating Button -->
     <div class="fixed bottom-10 left-6 md:bottom-8 md:left-8 z-[70] flex items-center group">
-        <a href="https://wa.me/__WHATSAPP_NUMBER__?text=Hola%20Oscar%2C%20vengo%20de%20tu%20sitio%20web%20Inge%20Fonsi.%20Me%20interesa%20saber%20m%C3%A1s..."
+        <a href="https://wa.me/573024505051?text=Hola%20Oscar%2C%20vengo%20de%20tu%20sitio%20web%20Inge%20Fonsi.%20Me%20interesa%20saber%20m%C3%A1s..."
             target="_blank"
             class="flex items-center justify-center w-14 h-14 bg-accent-cyan rounded-full text-black hover:bg-accent-orange transition-all duration-300 animate-pulse-cyan shadow-[0_0_20px_rgba(0,188,212,0.4)] z-10"
             title="Escr&iacute;beme directo">
@@ -328,9 +401,15 @@
             </div>
         </div>
     </div>
-        </div>
-    </div>
-        </div>
-    </div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+        // Set min date to today for all date pickers
+        const today = new Date().toISOString().split('T')[0];
+        document.querySelectorAll('input[type="date"]').forEach(input => {
+            input.setAttribute('min', today);
+        });
+    </script>
 </body>
 </html>
