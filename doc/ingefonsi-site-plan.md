@@ -524,12 +524,10 @@ Propósito: Nutre leads que no están listos para comprar todavía.
 
 ## 11. Contacto `/contacto`
 
-### Elementos obligatorios
-- Formulario simple: nombre, email, tipo de servicio (select), mensaje
-- Botón WhatsApp prominente (+57 316 664 4714)
-- Email visible: ingefonsi.tech@gmail.com
-- Tiempo de respuesta esperado: "Respondo en menos de 24 horas"
-- **No** pedir información excesiva — nombre + email + qué necesita es suficiente
+- **Formulario:** Integrado con Web3Forms (`__WEB3FORMS_KEY__`).
+- **Botón WhatsApp:** Dinámico hacia `wa.me/__WHATSAPP_NUMBER__`.
+- **Email:** Referencia a `__CONTACT_EMAIL__`.
+- **Identidad:** Señales NAP (Name, Address, Phone) consistentes en el Footer Global.
 
 ---
 
@@ -634,5 +632,15 @@ Datos verificados que pueden usarse en el sitio:
 
 ---
 
-*Última actualización: abril 2026*
-*Este documento debe actualizarse cada vez que se agregue una página nueva o cambie la estrategia.*
+*Última actualización: 5 de abril de 2026*
+
+---
+
+## 16. Implementación de Footer Global y Variables (Actualización)
+
+El sitio utiliza un **Footer Global Unificado** en todas las páginas para asegurar consistencia visual y semántica (NAP). 
+
+**Características clave:**
+- **Silos de Navegación:** Enlaces directos a los 3 servicios principales.
+- **Señales GEO:** Inclusión de perfiles sociales con `rel="me"` para validación de identidad ante IAs.
+- **Arquitectura Segura:** Toda la información de contacto y enlaces sociales se maneja vía **Variables de Entorno de Vercel** (`__VAR__`), evitando hardcodeo de datos sensibles en el repositorio.

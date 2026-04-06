@@ -55,16 +55,22 @@ a ocurrir**. Toda decisión técnica aquí está tomada con el costo como restri
 
 ```
 inge-fonsi/
-├── index.html          ← Único archivo HTML de la landing
+├── index.html          ← Home del sitio
+├── _template.html       ← Template base para nuevas páginas
+├── servicios/          ← Directorio de servicios (multi-página)
+│   ├── index.html      ← Índice de servicios
+│   └── [...]/index.html ← Páginas de cada servicio
+├── casos/              ← Directorio de casos de éxito
+├── precios/            ← Directorio de precios
 ├── assets/
 │   ├── css/
-│   │   └── custom.css  ← Solo variables CSS y estilos que Tailwind no cubre
+│   │   └── custom.css  ← Estilos globales y variables CSS
 │   ├── js/
-│   │   └── main.js     ← Lógica de scroll, Alpine data, contadores
-│   └── img/            ← Imágenes propias del portafolio y demos
-├── .env.example        ← Plantilla de variables de entorno (sin valores reales)
-├── .gitignore          ← Incluye .env real para que nunca suba a GitHub
-└── README.md           ← Instrucciones de desarrollo y despliegue
+│   │   └── main.js     ← Lógica Alpine, GSAP y Lucide
+│   └── img/            ← Favicon y assets locales
+├── .env.example        ← Plantilla de variables de entorno
+├── .gitignore          ← Excluye .env y archivos temporales
+└── README.md           ← Instrucciones generales
 ```
 
 **Regla de rutas:**
@@ -90,12 +96,19 @@ o el correo. La regla es:
 ```
 WHATSAPP_NUMBER=xxxxxxxxxxxx
 CONTACT_EMAIL=tucorreo@dominio.com
+WEB3FORMS_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+GITHUB_URL=https://github.com/usuario
+LINKEDIN_URL=https://linkedin.com/in/usuario
+TIKTOK_URL=https://tiktok.com/@usuario
+TWITTER_URL=https://x.com/usuario
 ```
 
 **Archivo `.env` real (en `.gitignore`, nunca sube a GitHub):**
 ```
 WHATSAPP_NUMBER=573001234567
 CONTACT_EMAIL=oscar@ingefonsi.com
+WEB3FORMS_KEY=your-actual-key-here
+... (resto de URLs sociales)
 ```
 
 ---

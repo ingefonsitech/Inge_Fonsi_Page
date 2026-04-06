@@ -61,7 +61,14 @@
 - [x] Revisión y pruebas de enlaces cruzados
 
 ## FASE 7 — Contenido y Zona de Blog
-- [~] Preparación de carpeta `/blog/drafts/` con archivos Markdown de base
+- [x] Preparación de carpeta `/blog/drafts/` con archivos Markdown de base
 - [ ] Construir y diseñar template UI final para cada artículo (`/blog/template.html`)
 - [ ] Redacción y publicación progresiva de los 12 artículos de blog
 - [ ] Conectar artículos al `sitemap.xml` para SEO Técnico
+
+## FASE 8 — Unificación y Variables (Global Footer & Vercel Env)
+- [x] Implementar Footer Global Unificado (Silos + SEO Local + NAP) en todas las páginas
+- [x] Configurar arquitectura de enlaces limpia (sin .html) para Vercel
+- [x] Integrar señales de identidad (GEO) con `rel="me"` y perfiles sociales
+- [x] Reemplazar hardcodeos de contacto por variables de entorno (`__VAR__`)
+- [x] Validar consistencia visual y semántica en móviles y desktop

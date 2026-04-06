@@ -85,9 +85,27 @@ body {
 }
 
 .scroll-line {
-    animation: scroll-down 2s ease-in-out infinite;
+    animation: scroll-down 4s ease-in-out infinite;
 }
 
-.scroll-line-slow {
-    animation: scroll-down 4s ease-in-out infinite;
+/* Floating animation for WhatsApp message */
+@keyframes float-x {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(8px); }
+}
+
+.animate-float-x {
+    animation: float-x 2s ease-in-out infinite alternate;
+}
+
+.whatsapp-bubble {
+    border-color: rgba(0, 188, 212, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 5px rgba(0, 188, 212, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-bubble-wrapper {
+        display: none !important;
+    }
 }

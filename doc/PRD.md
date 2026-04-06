@@ -56,10 +56,12 @@ Cada ítem representa un momento exitoso en la experiencia del visitante.
 - El usuario hizo clic en el correo directamente desde el sitio.
 - El visitante siguió a Inge Fonsi en redes sociales desde el footer o sección de contacto.
 
-### Rendimiento y accesibilidad
-- La página cargó en menos de 2 segundos en conexión móvil estándar.
-- El sitio se vio correctamente en móvil, tablet y desktop.
-- El usuario con lectores de pantalla pudo navegar sin problemas.
+### Rendimiento, Estructura y SEO
+- El visitante navegó entre **Home, Servicios, Precios y Casos** sin pérdida de contexto.
+- El usuario encontró un **Footer Global Unificado** con arquitectura de silos (enlaces a servicios principales).
+- El sistema utilizó **Variables de Entorno en Vercel** para manejar de forma segura el contacto (WhatsApp, Email) y Socials.
+- La página cargó en menos de 2 segundos con 100/100 en Core Web Vitals.
+- El sitio utilizó **URLs limpias** (sin .html) y etiquetas `rel="me"` para validación de identidad ante IAs (GEO).
 
 ---
 
@@ -73,8 +75,8 @@ Cada ítem representa un momento exitoso en la experiencia del visitante.
 | 4 | **Demos & Portafolio** | Galería de proyectos con enlaces a GitHub/Vercel |
 | 5 | **IA en el mundo real** | 1–2 casos cortos donde la IA resolvió algo concreto |
 | 6 | **Stack técnico** | Logos de tecnologías dominadas (credibilidad visual) |
-| 7 | **Contacto** | Formulario + botones de WhatsApp, email y redes |
-| 8 | **Footer** | Redes sociales, copyright, link de regreso arriba |
+| 7 | **Contacto** | Formulario (Web3Forms) + NAP (Name, Address, Phone) |
+| 8 | **Footer Global** | Silos de servicios, Redes (rel="me"), Sitemap y Copyright |
 
 ---
 
@@ -82,8 +84,8 @@ Cada ítem representa un momento exitoso en la experiencia del visitante.
 
 - No es un blog (sin sistema de publicaciones por ahora).
 - No es una tienda (sin carrito ni pagos en línea).
-- No tiene dashboard ni área privada.
-- No depende de APIs de pago para funcionar.
+- No tiene dashboard ni área privada de usuario.
+- No depende de bases de datos externas para la landing.
 
 ---
 

@@ -21,14 +21,13 @@ Hosting: Vercel Hobby (gratuito). Repo: GitHub.
 
 ## 3. Estado actual del proyecto
 - Fase actual: MANTENIMIENTO MULTI-PÁGINA Y CONTENIDO ✅
-- Últimas implementaciones:
-  1. Se modularon las carpetas `/servicios/`, `/precios/`, y `/casos/` superando el monolito de index.html
-  2. Sustituidas las imágenes del portafolio/precios con activos visuales.
-  3. **Mejora UX Navegación**: Se eliminó el menú lateral de iconos ("HUD") y ahora todo el sitio cuenta con un menú nav superior clásico.
-  4. Script de PowerShell implementado: `build.ps1` inyecta variables de `.env`. `update_nav.ps1` sincroniza el Top Bar en todas las páginas.
-  5. **Estabilización de Encoding (UTF-8)**: Se subsanó por completo la corrupción de caracteres especiales y firmas BOM fantasma producidas por ediciones manuales o scripts obsoletos, asegurando que todos los .html preserven acentos del español en formato estándar.
+- Últimas implementaciones (5 de abril de 2026):
+  1. **Footer Global Unificado**: Implementado en todas las páginas (Home, Servicios, Precios, Casos) con arquitectura de silos y NAP (Name, Address, Phone) consistente para SEO local en Bogotá.
+  2. **Variables de Entorno (Vercel)**: Se reemplazaron todos los datos hardcodeados de contacto (WhatsApp, Email) y redes sociales por placeholders `__VAR__` (e.g., `__WHATSAPP_NUMBER__`, `__CONTACT_EMAIL__`, `__GITHUB_URL__`, etc.) para inyección segura en Vercel.
+  3. **Optimización GEO**: Se integraron etiquetas `rel="me"` en enlaces sociales para validación de identidad ante algoritmos de búsqueda generativa.
+  4. **URLs Limpias**: Verificación de navegación consistente sin extensiones `.html` para mejor rastreo de bots.
 - Sitio en producción: https://ingefonsi.vercel.app
-- Próximo ítem a trabajar: Publicación y maquetación de la zona de Blog (Drafts iniciales existen en `/blog/drafts/`)
+- Próximo ítem a trabajar: Maquetación y diseño del template visual para el Blog (`/blog/template.html`).
 
 ## 4. Decisiones tomadas (para no volver a discutirlas)
 - Se sigue estrictamente el stack de CDNs (Html/Tailwind/Alpine) para evitar costos y complejidad de build.

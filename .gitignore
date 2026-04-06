@@ -63,3 +63,6 @@ logs/
 tmp/
 temp/
 *.tmp
+.temp.driveupload/
+.qwen/
+.tmp.driveupload/
