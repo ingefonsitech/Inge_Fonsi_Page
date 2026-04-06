@@ -212,27 +212,30 @@
             </div>
 
             <div class="space-y-6 flex flex-col justify-center">
-                <div 
-                    @click="selection = 'wordpress'"
+                <div @click="selection = 'wordpress'"
                     :class="selection === 'wordpress' ? 'border-accent-cyan bg-accent-cyan/5' : 'border-border-dim opacity-60'"
                     class="panel-ff p-6 cursor-pointer transition-all hover:bg-white/5 border group">
-                    <h4 :class="selection === 'wordpress' ? 'text-accent-cyan' : 'text-white'" class="font-bold mb-2 uppercase text-xs tracking-widest">Opción A: WordPress Custom</h4>
-                    <p class="text-xs text-text-muted leading-relaxed font-mono">Ideal para quienes necesitan autonomía editorial. Webs rápidas sin constructores pesados.</p>
+                    <h4 :class="selection === 'wordpress' ? 'text-accent-cyan' : 'text-white'"
+                        class="font-bold mb-2 uppercase text-xs tracking-widest">Opción A: WordPress Custom</h4>
+                    <p class="text-xs text-text-muted leading-relaxed font-mono">Ideal para quienes necesitan autonomía
+                        editorial. Webs rápidas sin constructores pesados.</p>
                 </div>
-                <div 
-                    @click="selection = 'codigo'"
+                <div @click="selection = 'codigo'"
                     :class="selection === 'codigo' ? 'border-accent-orange bg-accent-orange/5' : 'border-border-dim opacity-60'"
                     class="panel-ff p-6 cursor-pointer transition-all hover:bg-white/5 border group">
-                    <h4 :class="selection === 'codigo' ? 'text-accent-orange' : 'text-white'" class="font-bold mb-2 uppercase text-xs tracking-widest">Opción B: Código Propio (Next.js)</h4>
-                    <p class="text-xs text-text-muted leading-relaxed font-mono">Control total. Velocidad instantánea y seguridad impenetrable con tecnologías modernas.</p>
+                    <h4 :class="selection === 'codigo' ? 'text-accent-orange' : 'text-white'"
+                        class="font-bold mb-2 uppercase text-xs tracking-widest">Opción B: Código Propio (Next.js)</h4>
+                    <p class="text-xs text-text-muted leading-relaxed font-mono">Control total. Velocidad instantánea y
+                        seguridad impenetrable con tecnologías modernas.</p>
                 </div>
 
                 <div class="mt-8">
-                     <a :href="'https://wa.me/573024505051?text=Hola,%20me%20interesa%20un%20sitio%20web%20en%20' + (selection === 'wordpress' ? 'WordPress' : 'Código Propio')"
+                    <a :href="'https://wa.me/__WHATSAPP_NUMBER__?text=Hola,%20me%20interesa%20un%20sitio%20web%20en%20' + (selection === 'wordpress' ? 'WordPress' : 'Código Propio')"
                         target="_blank"
                         class="w-full inline-flex items-center justify-center gap-3 bg-accent-cyan text-black hover:bg-accent-orange font-montserrat uppercase font-bold py-4 px-10 rounded-[2px] transition-colors relative z-10 shadow-[0_0_40px_rgba(0,188,212,0.3)]">
-                        <i data-lucide="code-2" class="w-5 h-5"></i> 
-                        <span x-text="selection === 'wordpress' ? 'Iniciar Web WordPress' : 'Iniciar Web a Medida'"></span>
+                        <i data-lucide="code-2" class="w-5 h-5"></i>
+                        <span
+                            x-text="selection === 'wordpress' ? 'Iniciar Web WordPress' : 'Iniciar Web a Medida'"></span>
                     </a>
                 </div>
             </div>
