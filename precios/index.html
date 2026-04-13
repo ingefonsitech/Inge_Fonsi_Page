@@ -260,7 +260,7 @@
     </nav>
 
     <main x-data="{ 
-            selectedPlan: 'seo_geo_duo', 
+            selectedPlan: '', 
             tier: 'basic', 
             level: 'basic',
             get whatsappLink() {
@@ -302,7 +302,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <!-- Plan 1: Auditoría -->
             <div @click="selectedPlan = 'auditoria'"
-                :class="selectedPlan === 'auditoria' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                :class="selectedPlan === 'auditoria' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-border-dim hover:border-accent-cyan/50'"
                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
                 <div class="mb-6">
                     <span
@@ -328,7 +328,7 @@
 
             <!-- Plan 2: Landing Page GEO -->
             <div @click="selectedPlan = 'landing'"
-                :class="selectedPlan === 'landing' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                :class="selectedPlan === 'landing' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-border-dim hover:border-accent-cyan/50'"
                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
                 <div class="mb-6">
                     <span
@@ -360,7 +360,7 @@
 
             <!-- Plan 3: Chatbot RAG IA -->
             <div @click="selectedPlan = 'chatbot'"
-                :class="selectedPlan === 'chatbot' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                :class="selectedPlan === 'chatbot' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-border-dim hover:border-accent-cyan/50'"
                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
                 <div class="mb-6">
                     <span
@@ -392,7 +392,7 @@
 
             <!-- Plan 4: SEO Mensual -->
             <div @click="selectedPlan = 'seo_mensual'"
-                :class="selectedPlan === 'seo_mensual' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-transparent'"
+                :class="selectedPlan === 'seo_mensual' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.2)]' : 'border-border-dim hover:border-accent-cyan/50'"
                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
                 <div class="mb-6">
                     <span
@@ -413,7 +413,7 @@
 
             <!-- Plan 5: Combo Duo (Pre-seleccionado) -->
             <div @click="selectedPlan = 'seo_geo_duo'"
-                :class="selectedPlan === 'seo_geo_duo' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.4)]' : 'border-accent-cyan/10'"
+                :class="selectedPlan === 'seo_geo_duo' ? 'border-accent-cyan shadow-[0_0_15px_rgba(0,188,212,0.4)]' : 'border-border-dim hover:border-accent-cyan/50'"
                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-500 relative group border">
                 <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent-cyan text-black text-[10px] font-bold uppercase px-3 py-1 rounded-full z-10 shadow-lg"
                     x-show="selectedPlan === 'seo_geo_duo'">Seleccionado</div>
@@ -435,7 +435,7 @@
 
             <!-- Plan 6: Paquete Integral -->
             <div @click="selectedPlan = 'integral'"
-                :class="selectedPlan === 'integral' ? 'border-accent-orange shadow-[0_0_15px_rgba(255,87,34,0.2)]' : 'border-transparent'"
+                :class="selectedPlan === 'integral' ? 'border-accent-orange shadow-[0_0_15px_rgba(255,87,34,0.2)]' : 'border-border-dim hover:border-accent-orange/50'"
                 class="panel-ff p-8 flex flex-col h-full cursor-pointer transition-all duration-300 border">
                 <div class="mb-6">
                     <span
@@ -456,7 +456,7 @@
         </div>
 
         <!-- Master Action Button -->
-        <div
+        <div x-show="selectedPlan" x-transition x-cloak
             class="max-w-md mx-auto text-center animate-fade-in mt-12 bg-bg-panel/50 p-6 border border-border-dim rounded-[2px] shadow-2xl">
             <p class="text-[10px] uppercase tracking-[0.2em] text-text-muted mb-4">Plan seleccionado:</p>
             <div

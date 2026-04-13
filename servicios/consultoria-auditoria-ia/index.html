@@ -294,7 +294,7 @@
                       sending = true;
                       const formData = new FormData($el);
                       const data = Object.fromEntries(formData);
-                      fetch('https://api.web3forms.com/submit', {
+                      fetch('/api/contact', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(data)
@@ -315,8 +315,7 @@
                       })
                     " class="space-y-6 font-mono text-xs uppercase tracking-widest relative z-10">
 
-                    <!-- Web3Forms Config -->
-                    <input type="hidden" name="access_key" value="__WEB3FORMS_KEY__">
+                    <!-- Vercel API / Web3Forms data -->
                     <input type="hidden" name="subject" value="Nueva Solicitud de Auditoría 1a1">
                     <input type="hidden" name="from_name" value="Inge Fonsi - Auditorías">
                     <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
@@ -379,7 +378,7 @@
                     </div>
 
                     <!-- hCaptcha -->
-                    <div class="h-captcha" data-sitekey="__SITE_KEY__" data-theme="dark"></div>
+                    <div class="h-captcha" data-sitekey="158a08c8-fb72-492c-b41c-5b9c985426fa" data-theme="dark"></div>
 
                     <button x-show="!sent" type="submit"
                         class="w-full bg-accent-cyan text-black font-montserrat font-bold py-5 hover:bg-accent-orange transition-all uppercase shadow-[0_0_30px_rgba(0,188,212,0.3)] text-base flex items-center justify-center gap-2"

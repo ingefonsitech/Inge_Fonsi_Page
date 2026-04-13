@@ -743,7 +743,7 @@
                       sending = true;
                       const formData = new FormData($el);
                       const data = Object.fromEntries(formData);
-                      fetch('https://api.web3forms.com/submit', {
+                      fetch('/api/contact', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(data)
@@ -763,8 +763,7 @@
                         alert('Error de conexión. Intenta por WhatsApp.');
                       })
                     ">
-                    <!-- Web3Forms: campos ocultos requeridos -->
-                    <input type="hidden" name="access_key" value="__WEB3FORMS_KEY__">
+                    <!-- Vercel API / Web3Forms data -->
                     <input type="hidden" name="subject" value="Nuevo contacto desde Inge Fonsi">
                     <input type="hidden" name="from_name" value="Inge Fonsi Website">
                     <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
@@ -815,6 +814,11 @@
                                 Cuéntame tu problema
                             </label>
                         </div>
+                        
+                        <!-- hCaptcha -->
+                        <div class="h-captcha flex justify-center py-4" data-sitekey="158a08c8-fb72-492c-b41c-5b9c985426fa" data-theme="dark"></div>
+                        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
                         <div class="pt-4">
                             <button x-show="!sent" type="submit"
                                 class="w-full bg-accent-cyan text-black font-montserrat font-bold uppercase py-3 rounded-[2px] hover:bg-accent-orange transition-colors flex items-center justify-center gap-2"

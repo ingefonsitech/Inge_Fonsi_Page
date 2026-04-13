@@ -11,7 +11,7 @@
 
 
 gsap.registerPlugin(ScrollTrigger);
-import { Analytics } from "@vercel/analytics/next"
+
 document.addEventListener('DOMContentLoaded', () => {
     // System initialized (Producción)
 
