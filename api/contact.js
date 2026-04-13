@@ -55,11 +55,19 @@ export default async function handler(req, res) {
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             },
             body: JSON.stringify(payload),
         });
 
-        const web3Data = await web3Response.json();
+        const responseText = await web3Response.text();
+        let web3Data = {};
+        try {
+            web3Data = JSON.parse(responseText);
+        } catch (e) {
+            console.error('Web3Forms returned non-JSON response:', responseText.substring(0, 500));
+            return res.status(500).json({ success: false, message: 'Invalid response from email provider.' });
+        }
 
         if (web3Response.ok && web3Data.success) {
             return res.status(200).json({ success: true, message: 'Message sent successfully!' });
