@@ -8,12 +8,13 @@ export default async function handler(req, res) {
         const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
         
         const hCaptchaToken = body['h-captcha-response'];
-        const web3FormsKey = process.env.WEB3FORMS_KEY;
+        const resendKey = process.env.RESEND_API_KEY;
+        const targetEmail = process.env.CONTACT_EMAIL || 'tucorreo@dominio.com';
         const hCaptchaSecret = process.env.HCAPTCHA_SECRET;
 
         // 1. Validar configuracion de entorno
-        if (!web3FormsKey) {
-            console.error('Missing WEB3FORMS_KEY');
+        if (!resendKey) {
+            console.error('Missing RESEND_API_KEY');
             return res.status(500).json({ success: false, message: 'Server configuration error' });
         }
 
@@ -40,42 +41,52 @@ export default async function handler(req, res) {
             return res.status(400).json({ success: false, message: 'Please complete the captcha.' });
         }
 
-        // 3. Reenviar datos a Web3Forms
+        // 3. Reenviar datos a Resend
+        const subject = body.subject || 'Nuevo Lead desde Formulario Inge Fonsi';
+        
+        // Formatear los campos de manera dinámica (ya que hay varios formularios diferentes)
+        const excludedKeys = ['h-captcha-response', 'g-recaptcha-response', 'subject', 'from_name', 'botcheck', 'access_key'];
+        const fieldsHtml = Object.keys(body)
+            .filter(key => !excludedKeys.includes(key) && body[key].toString().trim() !== '')
+            .map(key => `<p><strong>${key.toUpperCase()}:</strong><br/> ${body[key]}</p>`)
+            .join('<br/>');
+
         const payload = {
-            ...body,
-            access_key: web3FormsKey,
+            from: 'Inge Fonsi Web <onboarding@resend.dev>',
+            to: targetEmail,
+            subject: subject,
+            html: `
+                <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
+                    <h2 style="color: #00bcd4;">Nuevo mensaje de tu sitio web</h2>
+                    <hr style="border: 1px solid #eee; margin-bottom: 20px;" />
+                    ${fieldsHtml}
+                </div>
+            `
         };
 
-        // Eliminar el token de hcaptcha del payload final para no ensuciar el email
-        delete payload['h-captcha-response'];
-        delete payload['g-recaptcha-response'];
-
-        const web3Response = await fetch('https://api.web3forms.com/submit', {
+        const resendResponse = await fetch('https://api.resend.com/emails', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json, text/plain, */*',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                Origin: 'https://ingefonsi.vercel.app',
-                Referer: 'https://ingefonsi.vercel.app/'
+                'Authorization': `Bearer ${resendKey}`,
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(payload),
         });
 
-        const responseText = await web3Response.text();
-        let web3Data = {};
+        const responseText = await resendResponse.text();
+        let emailData = {};
         try {
-            web3Data = JSON.parse(responseText);
+            emailData = JSON.parse(responseText);
         } catch (e) {
-            console.error('Web3Forms returned non-JSON response:', responseText.substring(0, 500));
+            console.error('Resend returned non-JSON response:', responseText.substring(0, 500));
             return res.status(500).json({ success: false, message: 'Invalid response from email provider.' });
         }
 
-        if (web3Response.ok && web3Data.success) {
+        if (resendResponse.ok) {
             return res.status(200).json({ success: true, message: 'Message sent successfully!' });
         } else {
-            console.error('Web3Forms Error:', web3Data);
-            return res.status(500).json({ success: false, message: 'Error sending message via integration.' });
+            console.error('Resend Error:', emailData);
+            return res.status(500).json({ success: false, message: `Error sending message: ${emailData.message || 'Unknown error'}` });
         }
     } catch (error) {
         console.error('Server error:', error);
