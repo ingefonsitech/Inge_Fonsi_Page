@@ -12,8 +12,6 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
-    <link rel="preconnect" href="https://js.hcaptcha.com" crossorigin>
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
     <!-- Font Preloading (Critical for LCP/CLS) -->
     <link rel="preload" href="../../assets/fonts/Oswald-600-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -29,7 +27,10 @@
     <style>
         [data-gsap-load] { opacity: 0; transform: translateY(20px); }
         .hero-word { display: inline-block; opacity: 0; transform: translateY(100%); }
+        /* LCP Optimization: Ensure main text is visible instantly */
+        h1 { opacity: 1 !important; transform: none !important; }
     </style>
+
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
