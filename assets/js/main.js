@@ -142,7 +142,7 @@ const animateCounter = (el, target) => {
             toggleActions: "play none none none"
         },
         onUpdate: () => {
-            el.innerHTML = Math.floor(obj.val) + (target > 1000 ? "+" : "");
+            el.textContent = Math.floor(obj.val) + (target > 1000 ? "+" : "");
         }
     });
 };

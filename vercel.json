@@ -1,16 +1,40 @@
 {
-  "redirects": [
-    { "source": "/precios", "destination": "/contacto/", "permanent": true },
-    { "source": "/precios/", "destination": "/contacto/", "permanent": true },
-    { "source": "/casos", "destination": "/proyectos/", "permanent": true },
-    { "source": "/casos/", "destination": "/proyectos/", "permanent": true },
-    { "source": "/casos/coordinadora", "destination": "/proyectos/", "permanent": true },
-    { "source": "/casos/coordinadora/", "destination": "/proyectos/", "permanent": true },
-    { "source": "/servicios/agente-ia-whatsapp", "destination": "/servicios/", "permanent": true },
-    { "source": "/servicios/agente-ia-whatsapp/", "destination": "/servicios/", "permanent": true },
-    { "source": "/servicios/chatbot-ia-empresarial", "destination": "/servicios/", "permanent": true },
-    { "source": "/servicios/chatbot-ia-empresarial/", "destination": "/servicios/", "permanent": true },
-    { "source": "/servicios/consultoria-auditoria-ia", "destination": "/servicios/", "permanent": true },
-    { "source": "/servicios/consultoria-auditoria-ia/", "destination": "/servicios/", "permanent": true }
+  "headers": [
+    {
+      "source": "/assets/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/assets/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    }
   ]
 }

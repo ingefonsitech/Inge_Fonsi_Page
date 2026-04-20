@@ -52,7 +52,7 @@
             </div>
 
             <!-- Mobile Hamburger -->
-            <button @click="open = !open" class="md:hidden text-white flex items-center">
+            <button aria-label="Abrir menú de navegación" @click="open = !open" class="md:hidden text-white flex items-center">
                 <i data-lucide="menu" class="w-6 h-6" x-show="!open"></i>
                 <i data-lucide="x" class="w-6 h-6" x-show="open" x-cloak></i>
             </button>
@@ -199,7 +199,7 @@
                         </li>
                         <li class="flex items-center gap-2">
                             <i data-lucide="phone" class="w-4 h-4 text-accent-cyan"></i>
-                            <a href="https://wa.me/__WHATSAPP_NUMBER__" class="hover:text-accent-cyan transition-colors">__WHATSAPP_NUMBER__</a>
+                            <a href="https://wa.me/__WHATSAPP_NUMBER__" aria-label="Contactar por WhatsApp" class="hover:text-accent-cyan transition-colors">__WHATSAPP_NUMBER__</a>
                         </li>
                         <li class="flex items-center gap-2">
                             <i data-lucide="mail" class="w-4 h-4 text-accent-cyan"></i>
@@ -241,17 +241,17 @@
                         Redes Profesionales
                     </h3>
                     <div class="flex gap-4 mb-4">
-                        <a href="__GITHUB_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="https://img.icons8.com/material-outlined/24/ffffff/github.png" alt="GitHub" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                        <a aria-label="Ver perfil de GitHub" href="__GITHUB_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
+                            <img width="20" height="20" src="../assets/img/social/github.png" alt="GitHub" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
-                        <a href="__LINKEDIN_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                        <a aria-label="Ver perfil de LinkedIn" href="__LINKEDIN_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
+                            <img width="20" height="20" src="../assets/img/social/linkedin.png" alt="LinkedIn" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
-                        <a href="__TWITTER_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png" alt="X" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                        <a aria-label="Ver perfil de X (Twitter)" href="__TWITTER_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
+                            <img width="20" height="20" src="../assets/img/social/twitterx.png" alt="X" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
-                        <a href="__TIKTOK_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png" alt="TikTok" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                        <a aria-label="Ver perfil de TikTok" href="__TIKTOK_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
+                            <img width="20" height="20" src="../assets/img/social/tiktok.png" alt="TikTok" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
                     </div>
                     <p class="font-mono text-[10px] text-text-muted uppercase leading-relaxed">
@@ -277,7 +277,7 @@
 
         <!-- WhatsApp Floating Button -->
     <div class="fixed bottom-10 left-6 md:bottom-8 md:left-8 z-[70] flex items-center group">
-        <a href="https://wa.me/__WHATSAPP_NUMBER__?text=Hola%20Oscar%2C%20vengo%20de%20tu%20sitio%20web%20Inge%20Fonsi.%20Me%20interesa%20saber%20m%C3%A1s..."
+        <a href="https://wa.me/__WHATSAPP_NUMBER__?text=Hola%20Oscar%2C%20vengo%20de%20tu%20sitio%20web%20Inge%20Fonsi.%20Me%20interesa%20saber%20m%C3%A1s..." aria-label="Contactar por WhatsApp"
             target="_blank"
             class="flex items-center justify-center w-14 h-14 bg-accent-cyan rounded-full text-black hover:bg-accent-orange transition-all duration-300 animate-pulse-cyan shadow-[0_0_20px_rgba(0,188,212,0.4)] z-10"
             title="Escr&iacute;beme directo">
