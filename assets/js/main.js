@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroTl = gsap.timeline();
 
     // Ocultar elementos para inicializar (solo si existen)
-    const heroElements = ['#hero-label', '#hero-subtitle', '#hero-ctas', '#scroll-indicator'];
+    const heroElements = document.querySelectorAll('[data-gsap-load]');
     if (document.querySelector('#hero')) {
-        gsap.set(heroElements, { opacity: 0, y: 20 });
-        gsap.set('.hero-word', { y: '100%', opacity: 0 });
+        // Los estados iniciales ya están en CSS para evitar CLS
+
 
         heroTl.to('.hero-word', {
             y: '0%',
@@ -120,7 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Finalize: Init Lucide ===
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
+        console.log('--- Icons Initialized ---');
     }
+
     
     console.log('--- System: Optimized Restoration Applied (v2.1) ---');
 });

@@ -11,18 +11,21 @@
         gtag('config', 'G-MV7L3WXM8X');
     </script>
 
+    <!-- Preconnect a CDNs cruciales -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://js.hcaptcha.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oscar Ochoa (Inge Fonsi) — Ingeniero Mecatrónico, desarrollador web y consultor de visibilidad digital con IA en Bogotá. Desarrollo web, SEO técnico y optimización para buscadores generativos (GEO).">
     <title>Oscar Ochoa (Inge Fonsi) | Ingeniero, Creador Digital y Consultor SEO de IA en Bogotá</title>
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-    <meta name="description" content="Oscar Ochoa (Inge Fonsi) — Ingeniero Mecatrónico, desarrollador web y consultor de visibilidad digital con IA en Bogotá. Desarrollo web, SEO técnico y optimización para buscadores generativos (GEO).">
     <link rel="canonical" href="https://ingefonsi.vercel.app/">
     
-
     <!-- Meta SEO & GEO -->
-    <meta name="description"
-        content="Oscar Ochoa (Inge Fonsi) &mdash; Ingeniero Mecatr&oacute;nico, desarrollador web y consultor de visibilidad digital con IA en Bogot&aacute;. Desarrollo web, SEO t&eacute;cnico y optimizaci&oacute;n para buscadores generativos (GEO).">
     <meta name="keywords"
         content="oscar ochoa, inge fonsi, ingeniero mecatronico bogota, desarrollo web bogota, seo bogota, geo seo, consultoria ia bogota">
     <meta name="author" content="Oscar Alfonso Ochoa Caballero">
@@ -30,7 +33,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Oscar Ochoa (Inge Fonsi) &mdash; Ingeniero y Creador Digital en Bogot&aacute;">
     <meta property="og:description"
-        content="Ingeniero Mecatr&oacute;nico con +10 a&ntilde;os de experiencia. Desarrollo web, SEO de nueva generaci&oacute;n e inteligencia artificial aplicada.">
+        content="Ingeniero Mecatrónico con +10 años de experiencia. Desarrollo web, SEO de nueva generación e inteligencia artificial aplicada.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ingefonsi.vercel.app/">
 
@@ -38,7 +41,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Oscar Ochoa (Inge Fonsi) &mdash; Ingeniero y Creador Digital en Bogot&aacute;">
     <meta name="twitter:description"
-        content="Ingeniero Mecatr&oacute;nico con +10 a&ntilde;os de experiencia. Desarrollo web, SEO de nueva generaci&oacute;n e inteligencia artificial aplicada.">
+        content="Ingeniero Mecatrónico con +10 años de experiencia. Desarrollo web, SEO de nueva generación e inteligencia artificial aplicada.">
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -50,6 +53,7 @@
           "@id": "https://ingefonsi.vercel.app/#person",
           "name": "Oscar Alfonso Ochoa Caballero",
           "jobTitle": "Ingeniero Mecatr&oacute;nico y Especialista en Visibilidad Digital",
+
           "url": "https://ingefonsi.vercel.app/",
           "sameAs": [
             "__LINKEDIN_URL__",
@@ -64,31 +68,34 @@
           "name": "Inge Fonsi",
           "founder": {"@id": "https://ingefonsi.vercel.app/#person"},
           "url": "https://ingefonsi.vercel.app/",
-          "areaServed": "Bogot&aacute;, Colombia",
+          "areaServed": "Bogotá, Colombia",
           "email": "__CONTACT_EMAIL__",
           "telephone": "+__WHATSAPP_NUMBER__",
-          "knowsAbout": ["SEO T&eacute;cnico", "Generative Engine Optimization (GEO)", "Desarrollo Web", "Inteligencia Artificial"]
+          "knowsAbout": ["SEO Técnico", "Generative Engine Optimization (GEO)", "Desarrollo Web", "Inteligencia Artificial"]
         }
       ]
     }
     </script>
 
-    <!-- Fuentes -->
-    <link
-        rel="stylesheet">
-
+    <!-- Fuentes Locales via Custom CSS -->
     <!-- CSS Optimizado -->
+    <link rel="preload" href="./assets/css/tailwind.css" as="style">
+    <link rel="preload" href="./assets/css/custom.css" as="style">
+    
     <link rel="stylesheet" href="./assets/css/tailwind.css">
-
     <link rel="stylesheet" href="./assets/css/custom.css">
+
+    <!-- Pre-render state to avoid CLS (Hero Animations) -->
+    <style>
+        [data-gsap-load] { opacity: 0; transform: translateY(20px); }
+        .hero-word { display: inline-block; opacity: 0; transform: translateY(100%); }
+    </style>
+
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/lucide@latest"></script>
-
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://unpkg.com"></head>
+</head>
 
 <body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
     <!-- ===================== TOP NAVIGATION ===================== -->
@@ -508,17 +515,18 @@
                     </h3>
                     <div class="flex gap-4 mb-4">
                         <a aria-label="Ver perfil de GitHub" href="__GITHUB_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="./assets/img/social/github.png" alt="GitHub" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                            <img width="20" height="20" src="./assets/img/social/github.png" alt="GitHub" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
                         <a aria-label="Ver perfil de LinkedIn" href="__LINKEDIN_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="./assets/img/social/linkedin.png" alt="LinkedIn" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                            <img width="20" height="20" src="./assets/img/social/linkedin.png" alt="LinkedIn" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
                         <a aria-label="Ver perfil de X (Twitter)" href="__TWITTER_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="./assets/img/social/twitterx.png" alt="X" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                            <img width="20" height="20" src="./assets/img/social/twitterx.png" alt="X" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
-                        <a aria-label="Ver perfil de TikTok" href="__TIKTOK_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="./assets/img/social/tiktok.png" alt="TikTok" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                        <a aria-label="Ver perfil de TikTok" href="__TWITTER_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
+                            <img width="20" height="20" src="./assets/img/social/tiktok.png" alt="TikTok" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
+
                     </div>
                     <p class="font-mono text-[10px] text-text-muted uppercase leading-relaxed">
                         Perfiles validados para se&ntilde;ales de identidad en motores de b&uacute;squeda generativa.
