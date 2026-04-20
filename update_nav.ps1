@@ -15,6 +15,7 @@ $navTemplate = @"
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
                 <a href="{P}index.html" class="text-text-muted hover:text-white transition-colors">Inicio</a>
+                <a href="{P}about/index.html" class="text-text-muted hover:text-white transition-colors">About</a>
                 
                 <div class="relative group" x-data="{ dropdownOpen: false }" @mouseenter="dropdownOpen = true" @mouseleave="dropdownOpen = false">
                     <a href="{P}servicios/index.html" class="text-text-muted hover:text-white transition-colors flex items-center gap-1">
@@ -23,16 +24,13 @@ $navTemplate = @"
                     <div x-show="dropdownOpen" x-transition x-cloak class="absolute top-full left-0 mt-4 w-56 bg-bg-panel border border-border-dim shadow-xl rounded-[2px] py-2 z-50">
                         <div class="absolute -top-4 left-0 w-full h-4"></div>
                         <a href="{P}servicios/seo-geo-ingenieria/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Ingenier&iacute;a SEO + GEO</a>
-                        <a href="{P}servicios/agente-ia-whatsapp/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Agente IA WhatsApp</a>
-                        <a href="{P}servicios/chatbot-ia-empresarial/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Chatbots Especializados</a>
                         <a href="{P}servicios/desarrollo-web-bogota/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Desarrollo Web Pro</a>
                         <a href="{P}servicios/workshops-ia-equipos/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Workshops IA</a>
-                        <a href="{P}servicios/consultoria-auditoria-ia/index.html" class="block px-4 py-2 text-text-muted hover:text-accent-cyan hover:bg-bg-base transition-colors">Auditor&iacute;as 1a1</a>
                     </div>
                 </div>
 
-                <a href="{P}precios/index.html" class="text-text-muted hover:text-white transition-colors">Precios</a>
-                <a href="{P}casos/index.html" class="text-text-muted hover:text-white transition-colors">Casos</a>
+                <a href="{P}proyectos/index.html" class="text-text-muted hover:text-white transition-colors">Proyectos</a>
+                <a href="{P}blog/index.html" class="text-text-muted hover:text-white transition-colors">Blog</a>
                 <a href="{P}index.html#contact" class="text-accent-cyan hover:text-white transition-colors border border-accent-cyan px-4 py-1.5 rounded-[2px] bg-accent-cyan/10 hover:bg-accent-cyan">Contacto</a>
             </div>
 
@@ -47,6 +45,7 @@ $navTemplate = @"
         <div x-show="open" x-transition x-cloak class="md:hidden border-t border-border-dim bg-bg-panel absolute w-full left-0 top-16 shadow-2xl overflow-y-auto max-h-[80vh]">
             <div class="flex flex-col p-6 gap-6 font-mono text-sm uppercase tracking-wider">
                 <a href="{P}index.html" class="text-white flex items-center gap-3"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
+                <a href="{P}about/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="user" class="w-4 h-4"></i> About</a>
                 
                 <div x-data="{ servOpen: false }">
                     <div class="flex items-center justify-between text-text-muted hover:text-accent-cyan cursor-pointer" @click="servOpen = !servOpen">
@@ -55,16 +54,13 @@ $navTemplate = @"
                     </div>
                     <div x-show="servOpen" x-transition x-cloak class="pl-7 flex flex-col gap-4 border-l border-border-dim ml-2 mt-4 text-xs">
                         <a href="{P}servicios/seo-geo-ingenieria/index.html" class="text-text-muted hover:text-accent-cyan">Ingenier&iacute;a SEO + GEO</a>
-                        <a href="{P}servicios/agente-ia-whatsapp/index.html" class="text-text-muted hover:text-accent-cyan">Agente IA WhatsApp</a>
-                        <a href="{P}servicios/chatbot-ia-empresarial/index.html" class="text-text-muted hover:text-accent-cyan">Chatbots Especializados</a>
                         <a href="{P}servicios/desarrollo-web-bogota/index.html" class="text-text-muted hover:text-accent-cyan">Desarrollo Web Pro</a>
                         <a href="{P}servicios/workshops-ia-equipos/index.html" class="text-text-muted hover:text-accent-cyan">Workshops IA</a>
-                        <a href="{P}servicios/consultoria-auditoria-ia/index.html" class="text-text-muted hover:text-accent-cyan">Auditor&iacute;as 1a1</a>
                     </div>
                 </div>
 
-                <a href="{P}precios/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="tag" class="w-4 h-4"></i> Precios</a>
-                <a href="{P}casos/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="briefcase" class="w-4 h-4"></i> Casos de Estudio</a>
+                <a href="{P}proyectos/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="folder-open" class="w-4 h-4"></i> Proyectos</a>
+                <a href="{P}blog/index.html" class="text-text-muted hover:text-accent-cyan flex items-center gap-3"><i data-lucide="pen-line" class="w-4 h-4"></i> Blog</a>
                 <a href="{P}index.html#contact" class="text-accent-cyan flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4"></i> Contacto</a>
             </div>
         </div>
@@ -90,16 +86,13 @@ $whatsappTemplate = @"
 
 $files = @(
     "index.html",
+    "about/index.html",
     "servicios/index.html",
     "servicios/seo-geo-ingenieria/index.html",
-    "servicios/agente-ia-whatsapp/index.html",
-    "servicios/chatbot-ia-empresarial/index.html",
     "servicios/desarrollo-web-bogota/index.html",
     "servicios/workshops-ia-equipos/index.html",
-    "servicios/consultoria-auditoria-ia/index.html",
-    "precios/index.html",
-    "casos/index.html",
-    "casos/coordinadora/index.html"
+    "proyectos/index.html",
+    "blog/index.html"
 )
 
 # Corruption Mapping (for maintenance)

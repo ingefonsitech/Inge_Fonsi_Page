@@ -64,7 +64,7 @@ ingefonsi.co/
 - [ ] Publicar artículo semana 1 (ver sección 6)
 - [ ] Crear `/precios` con rangos reales
 - [ ] Crear `/servicios/auditoria-geo-seo` (producto de entrada)
-- [ ] Documentar caso Coordinadora con métricas en `/casos/coordinadora`
+- [ ] Documentar proyectos personales con demos en `/proyectos/`
 
 ### Mes 2–3 (completar el sitio)
 - [ ] Crear `/servicios/chatbot-ia-negocio`
@@ -120,8 +120,7 @@ Tres cosas están cambiando ahora mismo:
 - SEO técnico → `/servicios/seo-tecnico-bogota`
 - Chatbot RAG de negocio → `/servicios/chatbot-ia-negocio`
 
-#### 3.4 Prueba social rápida (conservar de la versión actual)
-- Métricas del caso Coordinadora (agregar números concretos)
+- Proyectos personales destacados (demos en GitHub Pages)
 - Stack tecnológico
 
 #### 3.5 CTA final
@@ -308,9 +307,9 @@ Resultado:
 Tecnologías usadas: [stack]
 ```
 
-### Caso prioritario: `/casos/coordinadora`
+### Caso prioritario: Proyecto de logística crítica (confidencial)
 ```
-Empresa: Coordinadora Mercantil
+Empresa: [Confidencial — empresa de logística nacional]
 Sector:  Logística crítica
 Problema:
   El equipo técnico dependía de Postman y SOAP para validar conexiones
@@ -330,7 +329,7 @@ Resultado:
 Tecnologías: [completar con stack real usado]
 ```
 
-> **NOTA:** Agregar los números reales de tiempo ahorrado. Si no los tienes exactos, usa "estimado" o pide autorización para citarlos.
+> **NOTA:** Este caso es confidencial. No publicar el nombre de la empresa en el sitio web.
 
 ---
 
@@ -371,7 +370,7 @@ Cada artículo debe cumplir los tres trabajos simultáneamente:
 | Semana | Artículo | URL | Categoría | Objetivo |
 |---|---|---|---|---|
 | 1 | Qué es GEO y por qué tu negocio en Bogotá debe aparecer en ChatGPT | `/blog/que-es-geo-ia-bogota` | GEO | Educativo + captura demanda informativa. Nadie lo ha escrito bien en español para Colombia |
-| 2 | Caso real: chatbot RAG con PDFs de 500 páginas — proceso, errores y métricas | `/blog/chatbot-rag-caso-real-coordinadora` | Casos | Genera confianza. Demuestra expertise técnico real |
+| 2 | Caso real: chatbot RAG con PDFs de 500 páginas — proceso, errores y métricas | `/blog/chatbot-rag-caso-real` | Casos | Genera confianza. Demuestra expertise técnico real |
 | 3 | Meta bloqueó a ChatGPT en WhatsApp — qué cambia para negocios colombianos en 2026 | `/blog/meta-chatgpt-whatsapp-colombia-2026` | Automatización | Noticia técnica con ángulo local. Posiciona como analista del mercado |
 | 4 | Core Web Vitals en 2026: el checklist técnico que uso con cada cliente en Bogotá | `/blog/core-web-vitals-checklist-bogota-2026` | SEO técnico | Atrae búsquedas transaccionales. Demuestra proceso |
 | 5 | Por qué tu PYME en Bogotá necesita chatbot de negocio, no Meta AI | `/blog/chatbot-negocio-vs-meta-ai-pymes-colombia` | Automatización | Responde la objeción principal de ventas |
@@ -423,8 +422,8 @@ H1: Oscar Ochoa — Ingeniero que resuelve problemas digitales reales
 
 Párrafo de experiencia (contar la historia, no el CV):
   Ingeniero Mecatrónico con más de 10 años resolviendo problemas donde el
-  software se encuentra con la realidad física. Trabajé en Coordinadora
-  Mercantil, donde vi de cerca cómo los sistemas fallan no por problemas
+  software se encuentra con la realidad física. Trabajé en empresas de
+  logística crítica a nivel nacional, donde vi de cerca cómo los sistemas fallan no por problemas
   técnicos sino porque nadie los entiende de verdad.
 
   Cuando operaciones críticas dependían de procesos manuales repetitivos,
@@ -440,7 +439,7 @@ Credenciales técnicas:
   → Ingeniero Mecatrónico (título universitario)
   → +10 años de experiencia en automatización y sistemas
   → Especialización en SEO técnico, GEO y chatbots con RAG
-  → Proyectos en logística crítica (Coordinadora Mercantil)
+  → Proyectos en logística crítica a nivel nacional
   → Stack: Python, OpenAI, Gemini, Claude, WordPress, Vercel, GitHub
 
 Por qué "Inge Fonsi":

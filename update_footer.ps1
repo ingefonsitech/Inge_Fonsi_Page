@@ -6,7 +6,7 @@ $footerTemplate = @"
                 <!-- Branding & NAP (SEO Local) -->
                 <div>
                     <h2 class="text-white font-oswald text-2xl uppercase tracking-widest mb-4">
-                        Inge Fonsi - Consultor&iacute;a SEO e IA
+                        Inge Fonsi
                     </h2>
                     <ul class="font-mono text-sm text-text-muted space-y-2">
                         <li class="flex items-center gap-2">
@@ -27,7 +27,7 @@ $footerTemplate = @"
                 <!-- Enlaces Silos -->
                 <div>
                     <h3 class="text-white font-oswald text-lg uppercase tracking-wider mb-4 border-b border-border-dim pb-2 inline-block">
-                        Servicios Principales
+                        Servicios
                     </h3>
                     <ul class="font-mono text-sm text-text-muted space-y-3">
                         <li>
@@ -37,15 +37,15 @@ $footerTemplate = @"
                             </a>
                         </li>
                         <li>
-                            <a href="{P}servicios/agente-ia-whatsapp/index.html" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
+                            <a href="{P}servicios/desarrollo-web-bogota/index.html" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
                                 <i data-lucide="chevron-right" class="w-3 h-3 text-accent-cyan"></i>
-                                Agente IA WhatsApp
+                                Desarrollo Web Pro
                             </a>
                         </li>
                         <li>
-                            <a href="{P}servicios/chatbot-ia-empresarial/index.html" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
+                            <a href="{P}servicios/workshops-ia-equipos/index.html" class="hover:text-accent-cyan transition-colors flex items-center gap-2">
                                 <i data-lucide="chevron-right" class="w-3 h-3 text-accent-cyan"></i>
-                                Chatbots Especializados
+                                Workshops IA
                             </a>
                         </li>
                     </ul>
@@ -94,16 +94,13 @@ $footerTemplate = @"
 
 $files = @(
     "index.html",
+    "about/index.html",
     "servicios/index.html",
     "servicios/seo-geo-ingenieria/index.html",
-    "servicios/agente-ia-whatsapp/index.html",
-    "servicios/chatbot-ia-empresarial/index.html",
     "servicios/desarrollo-web-bogota/index.html",
     "servicios/workshops-ia-equipos/index.html",
-    "servicios/consultoria-auditoria-ia/index.html",
-    "precios/index.html",
-    "casos/index.html",
-    "casos/coordinadora/index.html"
+    "proyectos/index.html",
+    "blog/index.html"
 )
 
 foreach ($filePath in $files) {
@@ -127,6 +124,6 @@ foreach ($filePath in $files) {
         }
 
         [System.IO.File]::WriteAllText($fullPath, $content, $utf8NoBom)
-        Write-Host "Updated Footer Fix (Entities): $filePath" -ForegroundColor Green
+        Write-Host "Updated Footer: $filePath" -ForegroundColor Green
     }
 }

@@ -7,57 +7,42 @@
 
 <url>
   <loc>https://ingefonsi.vercel.app/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://ingefonsi.vercel.app/about/</loc>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://ingefonsi.vercel.app/servicios/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://ingefonsi.vercel.app/servicios/seo-geo-ingenieria/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ingefonsi.vercel.app/servicios/agente-ia-whatsapp/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ingefonsi.vercel.app/servicios/chatbot-ia-empresarial/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ingefonsi.vercel.app/servicios/desarrollo-web-bogota/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ingefonsi.vercel.app/servicios/workshops-ia-equipos/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ingefonsi.vercel.app/servicios/consultoria-auditoria-ia/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
+  <loc>https://ingefonsi.vercel.app/proyectos/</loc>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ingefonsi.vercel.app/precios/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ingefonsi.vercel.app/casos/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ingefonsi.vercel.app/casos/coordinadora/</loc>
-  <lastmod>2026-04-06T00:50:00+00:00</lastmod>
+  <loc>https://ingefonsi.vercel.app/blog/</loc>
+  <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   <priority>0.70</priority>
 </url>
 

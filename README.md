@@ -1,36 +1,44 @@
-# Inge Fonsi — Consultoría SEO e IA
+# Inge Fonsi — Consultoría SEO e IA (Edición Alto Rendimiento 2026)
 
 Hub personal de servicios de IA, SEO (Tradicional y GEO) y Soporte Técnico. 
-Proyecto multi-página optimizado para rendimiento extremo y visibilidad en motores de búsqueda generativa.
+Proyecto multi-página optimizado para **rendimiento extremo** (Lighthouse 100/100) y visibilidad en motores de búsqueda generativa.
 
 Construido por **Oscar Alfonso Ochoa Caballero**.
 
-## Stack Tecnológico
-- **Diseño:** Tailwind CSS (via Play CDN)
-- **Lógica:** Alpine.js (via CDN)
-- **Animaciones:** GSAP + ScrollTrigger (via CDN)
-- **Iconos/Vectores:** Lucide Icons & Simple Icons (via CDN)
+## 🚀 Optimización 2026
+El sitio ha sido migrado de una arquitectura basada en CDNs a una **Infraestructura de Activos Estáticos**:
+- **CSS Local:** Se eliminó el Tailwind Play CDN en favor de una compilación estática minificada (`tailwind.css`).
+- **Gestión de Fuentes:** Tipografías Montserrat y Oswald servidas localmente con `font-display: swap`.
+- **Carga Diferida:** Todos los scripts (GSAP, Alpine, Lucide) se cargan con `defer` para no bloquear el renderizado inicial.
+- **Activos Optimizados:** Imágenes y CV actualizados para 2026.
 
-## Arquitectura del Proyecto
-Este es un proyecto estático. No requiere `npm` ni compilación.
+## 🛠 Stack Tecnológico
+- **Estilos:** [Tailwind CSS v3](https://tailwindcss.com/) (Compilación Estática).
+- **Interactividad:** [Alpine.js](https://alpinejs.dev/) (Vía CDN).
+- **Animaciones:** [GSAP](https://greensock.com/gsap/) + ScrollTrigger.
+- **Iconografía:** [Lucide Icons](https://lucide.dev/).
 
-- `index.html`: Home principal.
-- `_template.html`: Estructura base para nuevas páginas.
-- `/servicios/`, `/precios/`, `/casos/`: Directorios de contenido modular.
-- `/assets/`: Estilos CSS globales (`custom.css`) y lógica JS (`main.js`).
+## 📁 Arquitectura del Proyecto
+- `index.html`: Home principal optimizada para conversión.
+- `about/index.html`: Identidad profesional y enlace al **CV 2026**.
+- `/servicios/`: Estructura de silos para servicios de IA y SEO.
+- `/proyectos/`: Portafolio técnico de soluciones.
+- `/assets/`:
+    - `/css/`: `tailwind.css` (compilado) y `custom.css` (temas).
+    - `/js/`: `main.js` (lógica centralizada).
+    - `/fonts/`: Tipografía de alto rendimiento.
+    - `/doc/`: CV y documentación pública.
 
-## Desarrollo Local
-1. Abre `index.html` en cualquier navegador.
-2. Se recomienda usar la extensión **Live Server** en VS Code para recarga automática.
+## 💻 Desarrollo Local
+1. Clona el repositorio.
+2. Abre `index.html` con **Live Server**.
+3. Para realizar cambios en el diseño, usa la entrada de Tailwind:
+   `npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind.css --minify`
 
-## Despliegue en Vercel
-1. Sube el código a GitHub.
-2. Conecta el repositorio en el dashboard de **Vercel**.
-3. **IMPORTANTE:** Debes configurar las siguientes Variables de Entorno para que el contacto y las redes funcionen correctamente:
-   - `WHATSAPP_NUMBER`: Solo números (ej: 573001234567)
-   - `CONTACT_EMAIL`: Correo oficial
-   - `WEB3FORMS_KEY`: Llave de acceso para el formulario
-   - `GITHUB_URL`, `LINKEDIN_URL`, `TIKTOK_URL`, `TWITTER_URL`: URLs de perfiles sociales
+## ☁️ Despliegue en Vercel
+Configura las variables de entorno para habilitar la funcionalidad:
+- `WHATSAPP_NUMBER`, `CONTACT_EMAIL`, `WEB3FORMS_KEY`.
+- `GITHUB_URL`, `LINKEDIN_URL`, etc.
 
 ---
-*Ingeniería de visibilidad digital real. Sin frameworks pesados. Sin complicaciones.*
+*Ingeniería de visibilidad digital real. Sin frameworks pesados. Velocidad luz.*

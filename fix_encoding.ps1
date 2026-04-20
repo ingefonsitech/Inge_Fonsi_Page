@@ -1,15 +1,14 @@
 $files = @(
     "index.html",
+    "about/index.html",
     "servicios/index.html",
-    "servicios/geo-visibilidad-ia/index.html",
-    "servicios/seo-tecnico-bogota/index.html",
-    "servicios/chatbot-ia-negocio/index.html",
-    "servicios/landing-pages-bogota/index.html",
-    "servicios/auditoria-geo-seo/index.html",
-    "precios/index.html",
-    "casos/index.html",
-    "casos/coordinadora/index.html"
+    "servicios/seo-geo-ingenieria/index.html",
+    "servicios/desarrollo-web-bogota/index.html",
+    "servicios/workshops-ia-equipos/index.html",
+    "proyectos/index.html",
+    "blog/index.html"
 )
+
 
 $replacements = @{
     "Ã©" = "é"

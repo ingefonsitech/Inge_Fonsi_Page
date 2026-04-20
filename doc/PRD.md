@@ -27,11 +27,11 @@ Cada ítem representa un momento exitoso en la experiencia del visitante.
 ### Identidad y marca
 - El visitante vio el nombre **"Inge Fonsi"** y una frase que resumió la propuesta de valor en menos de 5 segundos.
 - El usuario reconoció que detrás del sitio hay un **ingeniero real**, no una agencia.
-- El visitante leyó la historia de Oscar: de Coordinadora Mercantil y Mecatrónica hasta construir soluciones con IA.
+- El visitante leyó la historia de Oscar: de la ingeniería mecatrónica e industria logística nacional hasta construir soluciones con IA.
 - El usuario sintió que la marca es técnica, honesta y humana a la vez.
 
 ### Servicios
-- El visitante vio una sección clara con **4 servicios diferenciados**:
+- El visitante vio una sección clara con **3 servicios diferenciados**:
   1. Diseño de landing pages de alta conversión.
   2. SEO tradicional (WordPress y sitios estáticos).
   3. SEO nuevo para IA (optimización para Perplexity, SearchGPT y similares).
@@ -57,7 +57,7 @@ Cada ítem representa un momento exitoso en la experiencia del visitante.
 - El visitante siguió a Inge Fonsi en redes sociales desde el footer o sección de contacto.
 
 ### Rendimiento, Estructura y SEO
-- El visitante navegó entre **Home, Servicios, Precios y Casos** sin pérdida de contexto.
+- El visitante navegó entre **Home, About, Servicios, Proyectos y Blog** sin pérdida de contexto.
 - El usuario encontró un **Footer Global Unificado** con arquitectura de silos (enlaces a servicios principales).
 - El sistema utilizó **Variables de Entorno en Vercel** para manejar de forma segura el contacto (WhatsApp, Email) y Socials.
 - La página cargó en menos de 2 segundos con 100/100 en Core Web Vitals.

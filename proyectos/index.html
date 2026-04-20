@@ -2,11 +2,8 @@
 <html lang="es-CO">
 
 <head>
-    <!-- Google Analytics 4 (GA4) -->
     <!-- CSS Optimizado -->
     <link rel="stylesheet" href="../assets/css/tailwind.css">
-
-
     <link rel="stylesheet" href="../assets/css/custom.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -19,7 +16,6 @@
 
 <body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
 
-    <!-- NAV placeholder - will be replaced by update_nav.ps1 -->
         <!-- ===================== TOP NAVIGATION ===================== -->
     <nav x-data="{ open: false }" class="w-full border-b border-border-dim bg-bg-base/90 backdrop-blur-md fixed top-0 z-50 transition-all duration-300">
         <div class="absolute bottom-0 left-0 w-full h-[2px] bg-transparent pointer-events-none">
@@ -87,89 +83,106 @@
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-24 min-h-screen relative">
-        <div class="text-center mb-16">
-            <span class="section-label mb-4 block">SERVICIOS ESPECIALIZADOS</span>
-            <h1 class="font-oswald text-4xl md:text-6xl font-bold uppercase tracking-wider text-white">C&oacute;mo puedo ayudarte</h1>
-            <p class="mt-4 text-text-muted font-mono max-w-2xl mx-auto">Soluciones dise&ntilde;adas para la era de la IA, optimizadas para conversi&oacute;n y rendimiento t&eacute;cnico extremo.</p>
+    <main class="max-w-5xl mx-auto px-6 py-20 min-h-screen">
+
+        <header class="mb-16 text-center pt-8">
+            <span class="section-label mb-4 block">LABORATORIO</span>
+            <h1 class="font-oswald text-4xl md:text-6xl font-bold uppercase tracking-wider text-white mb-6">Proyectos y Demos</h1>
+            <p class="font-mono text-text-muted text-lg max-w-2xl mx-auto">
+                Proyectos personales donde experimento, construyo y demuestro capacidades t&eacute;cnicas reales. Sin clientes confidenciales &mdash; solo trabajo propio.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Proyecto 1: Analizador IA -->
+            <div class="panel-ff group flex flex-col h-full hover:scale-[1.02] transition-transform duration-300">
+                <div class="h-48 bg-bg-panel border-b border-border-dim overflow-hidden relative flex items-center justify-center">
+                    <div class="absolute inset-0 bg-accent-glow opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    <i data-lucide="brain" class="w-16 h-16 text-accent-cyan opacity-80 group-hover:scale-110 transition-transform"></i>
+                    <div class="absolute bottom-2 right-2 bg-black px-2 py-1 text-[10px] font-mono text-white border border-border-dim">
+                        IA &middot; AN&Aacute;LISIS</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="font-montserrat text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">
+                        Analizador IA</h2>
+                    <p class="font-mono text-sm text-text-muted flex-grow mb-4">
+                        Herramienta de an&aacute;lisis inteligente que procesa datos y genera insights accionables usando modelos de lenguaje. Interfaz web interactiva con visualizaci&oacute;n en tiempo real.
+                    </p>
+                    <div class="flex gap-2 flex-wrap mb-4">
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-cyan/30 text-accent-cyan font-mono">OpenAI</span>
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-cyan/30 text-accent-cyan font-mono">Python</span>
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-cyan/30 text-accent-cyan font-mono">Web UI</span>
+                    </div>
+                    <div class="font-oswald text-accent-cyan uppercase text-sm flex justify-between items-center mt-auto border-t border-border-dim pt-4">
+                        <span class="text-text-muted text-xs font-mono">Demo en GitHub Pages &rarr;</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: OpenClaw Agent -->
+            <div class="panel-ff group flex flex-col h-full hover:scale-[1.02] transition-transform duration-300">
+                <div class="h-48 bg-bg-panel border-b border-border-dim overflow-hidden relative flex items-center justify-center">
+                    <div class="absolute inset-0 bg-accent-glow opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    <i data-lucide="bot" class="w-16 h-16 text-accent-orange opacity-80 group-hover:scale-110 transition-transform"></i>
+                    <div class="absolute bottom-2 right-2 bg-black px-2 py-1 text-[10px] font-mono text-white border border-border-dim">
+                        AGENTE IA &middot; LOCAL</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="font-montserrat text-xl font-bold text-white mb-2 group-hover:text-accent-orange transition-colors">
+                        OpenClaw Agent</h2>
+                    <p class="font-mono text-sm text-text-muted flex-grow mb-4">
+                        Framework de agente IA de ejecuci&oacute;n local. Automatizaci&oacute;n de tareas complejas con cadenas de pensamiento, acceso a herramientas y memoria contextual. Funciona sin conexi&oacute;n a la nube.
+                    </p>
+                    <div class="flex gap-2 flex-wrap mb-4">
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-orange/30 text-accent-orange font-mono">Local LLM</span>
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-orange/30 text-accent-orange font-mono">Agents</span>
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-orange/30 text-accent-orange font-mono">RAG</span>
+                    </div>
+                    <div class="font-oswald text-accent-orange uppercase text-sm flex justify-between items-center mt-auto border-t border-border-dim pt-4">
+                        <span class="text-text-muted text-xs font-mono">Documentaci&oacute;n del Setup &rarr;</span>
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Este Sitio Web -->
+            <div class="panel-ff group flex flex-col h-full hover:scale-[1.02] transition-transform duration-300">
+                <div class="h-48 bg-bg-panel border-b border-border-dim overflow-hidden relative flex items-center justify-center">
+                    <div class="absolute inset-0 bg-accent-glow opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    <i data-lucide="code-2" class="w-16 h-16 text-accent-cyan opacity-80 group-hover:scale-110 transition-transform"></i>
+                    <div class="absolute bottom-2 right-2 bg-black px-2 py-1 text-[10px] font-mono text-white border border-border-dim">
+                        WEB &middot; SEO/GEO</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="font-montserrat text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">
+                        ingefonsi.vercel.app</h2>
+                    <p class="font-mono text-sm text-text-muted flex-grow mb-4">
+                        Este mismo sitio web. Arquitectura est&aacute;tica pura (HTML + Tailwind CDN + Alpine.js), optimizado para Core Web Vitals 100/100, SEO t&eacute;cnico y posicionamiento GEO en buscadores de IA.
+                    </p>
+                    <div class="flex gap-2 flex-wrap mb-4">
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-cyan/30 text-accent-cyan font-mono">Tailwind</span>
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-cyan/30 text-accent-cyan font-mono">Vercel</span>
+                        <span class="text-[9px] uppercase px-2 py-0.5 border border-accent-cyan/30 text-accent-cyan font-mono">GEO</span>
+                    </div>
+                    <div class="font-oswald text-accent-cyan uppercase text-sm flex justify-between items-center mt-auto border-t border-border-dim pt-4">
+                        <span class="text-text-muted text-xs font-mono">Est&aacute;s mir&aacute;ndolo ahora</span>
+                        <i data-lucide="monitor" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- 1: SEO + GEO -->
-            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden border border-accent-cyan/10">
-                <i data-lucide="zap" class="w-10 h-10 text-accent-cyan mb-6 group-hover:animate-pulse-cyan"></i>
-                <h3 class="font-montserrat text-2xl font-bold text-white mb-3 tracking-tight">Ingenier&iacute;a SEO + GEO</h3>
-                <p class="font-mono text-text-muted text-sm mb-6 flex-grow leading-relaxed">
-                    Estrategia h&iacute;brida para dominar b&uacute;squedas tradicionales y ser citado por los nuevos buscadores de IA (ChatGPT, SearchGPT, Perplexity).
-                </p>
-                <div class="space-y-4 mb-8">
-                    <div class="text-[10px] uppercase font-bold text-accent-cyan tracking-widest border-b border-border-dim pb-1 italic">Tecnolog&iacute;as Clave</div>
-                    <ul class="text-[11px] font-mono text-text-muted space-y-1">
-                        <li>&middot; Schema.org Generative Semantic</li>
-                        <li>&middot; Core Web Vitals (Puntaje 100)</li>
-                        <li>&middot; LLM Citation Strategy</li>
-                    </ul>
-                </div>
-                <a href="seo-geo-ingenieria/index.html" class="inline-flex items-center gap-2 border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-3 px-6 rounded-[2px] transition-all w-full justify-center text-sm shadow-[0_0_15px_rgba(0,188,212,0.1)]">
-                    Ficha T&eacute;cnica <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-            </div>
-
-            <!-- 2: Desarrollo Web -->
-            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden border border-accent-cyan/10">
-                <i data-lucide="code-2" class="w-10 h-10 text-accent-cyan mb-6 group-hover:animate-pulse-cyan"></i>
-                <h3 class="font-montserrat text-2xl font-bold text-white mb-3 tracking-tight">Desarrollo Web Pro</h3>
-                <p class="font-mono text-text-muted text-sm mb-6 flex-grow leading-relaxed">
-                    Ecosistemas digitales que priorizan la velocidad de carga y la legibilidad para motores de b&uacute;squeda de nueva generaci&oacute;n.
-                </p>
-                <div class="space-y-4 mb-8">
-                    <div class="text-[10px] uppercase font-bold text-accent-cyan tracking-widest border-b border-border-dim pb-1 italic">Plataformas</div>
-                    <ul class="text-[11px] font-mono text-text-muted space-y-1">
-                        <li>&middot; High-Conversion Landing Pages</li>
-                        <li>&middot; Headless WordPress / Next.js</li>
-                        <li>&middot; Custom Engineering Solutions</li>
-                    </ul>
-                </div>
-                <a href="desarrollo-web-bogota/index.html" class="inline-flex items-center gap-2 border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-3 px-6 rounded-[2px] transition-all w-full justify-center text-sm">
-                    Explorar Opciones <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-            </div>
-
-            <!-- 3: Workshops IA -->
-            <div class="panel-ff p-8 group flex flex-col h-full relative overflow-hidden border border-accent-cyan/10">
-                <i data-lucide="users" class="w-10 h-10 text-accent-cyan mb-6 group-hover:animate-pulse-cyan"></i>
-                <h3 class="font-montserrat text-2xl font-bold text-white mb-3 tracking-tight">Workshops IA</h3>
-                <p class="font-mono text-text-muted text-sm mb-6 flex-grow leading-relaxed">
-                    Capacitaci&oacute;n para equipos t&eacute;cnicos y de marketing sobre la integraci&oacute;n real de IA en flujos de trabajo.
-                </p>
-                <div class="space-y-4 mb-8">
-                    <div class="text-[10px] uppercase font-bold text-accent-cyan tracking-widest border-b border-border-dim pb-1 italic">M&oacute;dulos</div>
-                    <ul class="text-[11px] font-mono text-text-muted space-y-1">
-                        <li>&middot; Advanced Prompt Engineering</li>
-                        <li>&middot; AI Agents Workflows</li>
-                        <li>&middot; Automation Diagnostics</li>
-                    </ul>
-                </div>
-                <a href="workshops-ia-equipos/index.html" class="inline-flex items-center gap-2 border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-3 px-6 rounded-[2px] transition-all w-full justify-center text-sm">
-                    Ver Temarios <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="mt-20 panel-ff p-8 text-center border border-accent-orange/20">
-            <h2 class="font-oswald text-2xl uppercase text-white mb-4">&iquest;Necesitas algo diferente?</h2>
-            <p class="font-mono text-text-muted text-sm mb-8 max-w-xl mx-auto italic">Cada proyecto es &uacute;nico. Cu&eacute;ntame lo que necesitas y te preparo una cotizaci&oacute;n personalizada sin compromiso.</p>
-            <a href="../index.html#contact" class="inline-flex items-center gap-2 bg-accent-orange text-white font-montserrat uppercase font-bold py-4 px-10 rounded-[2px] hover:bg-white hover:text-black transition-all">
-                Solicitar Cotizaci&oacute;n <i data-lucide="message-square" class="w-5 h-5"></i>
+        <div class="mt-20 border-t border-border-dim pt-12 text-center">
+            <h3 class="font-oswald text-2xl uppercase text-white mb-4">&iquest;Quieres construir algo similar?</h3>
+            <a href="../index.html#contact"
+                class="inline-flex items-center gap-2 border border-accent-cyan text-accent-cyan hover:bg-accent-glow font-montserrat uppercase font-bold py-3 px-8 rounded-[2px] transition-colors">
+                <i data-lucide="mail" class="w-5 h-5"></i> Hablemos de tu proyecto
             </a>
         </div>
     </main>
 
-    <!-- FOOTER placeholder -->
-        <!-- ===================== FOOTER ======================== -->
-        <!-- ===================== FOOTER ======================== -->
         <!-- ===================== FOOTER ======================== -->
     <footer class="pt-12 pb-8 border-t border-border-dim bg-bg-panel flex flex-col relative z-20">
         <div class="container mx-auto px-4 max-w-6xl">
@@ -263,8 +276,6 @@
     </footer>
 
         <!-- WhatsApp Floating Button -->
-        <!-- WhatsApp Floating Button -->
-        <!-- WhatsApp Floating Button -->
     <div class="fixed bottom-10 left-6 md:bottom-8 md:left-8 z-[70] flex items-center group">
         <a href="https://wa.me/__WHATSAPP_NUMBER__?text=Hola%20Oscar%2C%20vengo%20de%20tu%20sitio%20web%20Inge%20Fonsi.%20Me%20interesa%20saber%20m%C3%A1s..."
             target="_blank"
@@ -280,10 +291,9 @@
     </div>
         </div>
     </div>
-        </div>
-    </div>
 
     <script defer src="../assets/js/main.js"></script>
     
 </body>
+
 </html>

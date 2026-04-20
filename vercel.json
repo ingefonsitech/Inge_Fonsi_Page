@@ -1,3 +1,16 @@
 {
-  "cleanUrls": true
+  "redirects": [
+    { "source": "/precios", "destination": "/contacto/", "permanent": true },
+    { "source": "/precios/", "destination": "/contacto/", "permanent": true },
+    { "source": "/casos", "destination": "/proyectos/", "permanent": true },
+    { "source": "/casos/", "destination": "/proyectos/", "permanent": true },
+    { "source": "/casos/coordinadora", "destination": "/proyectos/", "permanent": true },
+    { "source": "/casos/coordinadora/", "destination": "/proyectos/", "permanent": true },
+    { "source": "/servicios/agente-ia-whatsapp", "destination": "/servicios/", "permanent": true },
+    { "source": "/servicios/agente-ia-whatsapp/", "destination": "/servicios/", "permanent": true },
+    { "source": "/servicios/chatbot-ia-empresarial", "destination": "/servicios/", "permanent": true },
+    { "source": "/servicios/chatbot-ia-empresarial/", "destination": "/servicios/", "permanent": true },
+    { "source": "/servicios/consultoria-auditoria-ia", "destination": "/servicios/", "permanent": true },
+    { "source": "/servicios/consultoria-auditoria-ia/", "destination": "/servicios/", "permanent": true }
+  ]
 }
