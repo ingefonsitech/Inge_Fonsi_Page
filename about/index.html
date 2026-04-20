@@ -7,17 +7,35 @@
     <meta name="description" content="Conoce a Oscar Ochoa (Inge Fonsi). Ingeniero mecatrónico y consultor SEO/GEO en Bogotá con más de 10 años de experiencia uniendo ingeniería de soporte con visibilidad digital avanzada.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect a CDNs cruciales -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://js.hcaptcha.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+    <!-- Font Preloading (Critical for LCP/CLS) -->
+    <link rel="preload" href="../assets/fonts/Oswald-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/Montserrat-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+
     <!-- CSS Optimizado -->
+    <link rel="preload" href="../assets/css/tailwind.css" as="style">
+    <link rel="preload" href="../assets/css/custom.css" as="style">
     <link rel="stylesheet" href="../assets/css/tailwind.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <!-- Pre-render state to avoid CLS (Hero Animations) -->
+    <style>
+        [data-gsap-load] { opacity: 0; transform: translateY(20px); }
+        .hero-word { display: inline-block; opacity: 0; transform: translateY(100%); }
+    </style>
+
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/lucide@latest"></script>
-
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://unpkg.com"></head>
+</head>
 
 <body class="bg-bg-base text-white font-mono selection:bg-accent-cyan selection:text-black">
 
@@ -332,18 +350,19 @@
                     </h3>
                     <div class="flex gap-4 mb-4">
                         <a aria-label="Ver perfil de GitHub" href="__GITHUB_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="../assets/img/social/github.png" alt="GitHub" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                            <img width="20" height="20" src="../assets/img/social/github.png" alt="GitHub" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
                         <a aria-label="Ver perfil de LinkedIn" href="__LINKEDIN_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="../assets/img/social/linkedin.png" alt="LinkedIn" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                            <img width="20" height="20" src="../assets/img/social/linkedin.png" alt="LinkedIn" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
                         <a aria-label="Ver perfil de X (Twitter)" href="__TWITTER_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="../assets/img/social/twitterx.png" alt="X" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                            <img width="20" height="20" src="../assets/img/social/twitterx.png" alt="X" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
                         <a aria-label="Ver perfil de TikTok" href="__TIKTOK_URL__" target="_blank" rel="me" class="group transition-all flex items-center justify-center w-10 h-10 border border-border-dim rounded-[2px] hover:border-accent-cyan hover:bg-accent-cyan/10">
-                            <img width="20" height="20" src="../assets/img/social/tiktok.png" alt="TikTok" width="20" height="20" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
+                            <img width="20" height="20" src="../assets/img/social/tiktok.png" alt="TikTok" class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:filter group-hover:drop-shadow-[0_0_8px_#00f5ff]" loading="lazy">
                         </a>
                     </div>
+
                     <p class="font-mono text-[10px] text-text-muted uppercase leading-relaxed">
                         Perfiles validados para se&ntilde;ales de identidad en motores de b&uacute;squeda generativa.
                     </p>
